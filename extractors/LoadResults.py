@@ -9,7 +9,7 @@ import json
 def import_content(file_path):
     mng_client = pymongo.MongoClient('localhost', 27017)
     mng_db = mng_client['test']  # Replace mongo db name
-    collection_name = 'hotels'  # Replace mongo db collection name
+    collection_name = 'review'  # Replace mongo db collection name
     db_cm = mng_db[collection_name]
     cdir = os.path.dirname(__file__)
     file_res = os.path.join(cdir, file_path)
