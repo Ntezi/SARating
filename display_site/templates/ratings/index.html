@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Businesses</title>
+</head>
+<body>
+
+<h1>Businesses:</h1>
+    {% if businesses %}
+
+        <ol>
+            {% for business in businesses %}
+                <li><b>{{ business.name }}</b></li>
+                <ul>
+
+                    <li>Category: {{ business.category }}</li>
+                    <li>Positive Reviews: {{ business.positive_reviews }}</li>
+                    <li>Negative Reviews: {{ business.negative_reviews }}</li>
+                    <li>Total Reviews: {{ business.total_reviews }}</li>
+                    <li>Ratings: {{ business.ratings }}</li>
+                </ul>
+            {% endfor %}
+        </ol>
+
+    {% endif %}
+</body>
+</html>
