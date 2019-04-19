@@ -7,7 +7,7 @@ from . import models
 
 
 def index(request):
-    business = models.Business.objects.all()
+    business = models.Business.objects.order_by('-ratings')
     businesses = {"businesses": business}
     return render(request, 'ratings/index.html', context=businesses)
     # return HttpResponse(business)
