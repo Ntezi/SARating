@@ -1,45 +1,49 @@
 {% extends "ratings/base.html" %}
+{% load ratings_extras %}
 {% block body_block %}
 <div class="row">
-    <div class="well">
-        <div class="list-group">
-            {% for business in businesses %}
-            <a href="#" class="list-group-item">
-                <div class="media col-md-3">
-                    <figure class="pull-left">
-                        <img class="media-object img-rounded img-responsive" src="http://placehold.it/350x180"
-                             alt="placehold.it/350x150">
-                    </figure>
-                </div>
-                <div class="col-md-6">
-                    <h4 class="list-group-item-heading"> {{ business.name }} </h4>
-                    <p class="list-group-item-text" style="padding-top: 15px;">
-                    <ul>
-                        <li>Category: {{ business.category }}</li>
-                        <li>Positive Reviews: {{ business.positive_reviews }}</li>
-                        <li>Negative Reviews: {{ business.negative_reviews }}</li>
-                    </ul>
-                    </p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <h2> {{ business.total_reviews }}
-                        <small> reviews</small>
-                    </h2>
-                    <div class="stars">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
+    <div class="col-md-9">
+        <div class="well">
+            {% if businesses %}
+            <div class="list-group">
+                {% for business in businesses %}
+                <a href="https://www.tripadvisor.com{{ business.url }}" class="list-group-item" target="_blank">
+
+                    <div class="col-md-6">
+                        <h4> {{ business.name }} </h4>
+                         <h6> {{ business.name|lower }} </h6>
+                        <p class="list-group-item-text" style="padding-top: 15px;">
+                        <ul>
+                            <li>Category: {{ business.category }}</li>
+                            <li>Positive Reviews: {{ business.positive_reviews }}</li>
+                            <li>Negative Reviews: {{ business.negative_reviews }}</li>
+                        </ul>
+                        </p>
                     </div>
-                    <p> Average {{ business.ratings }}
-                        <small> /</small>
-                        5
-                    </p>
-                </div>
-            </a>
-            {% endfor %}
+                    <div class="col-md-6 text-center">
+                        <h2> {{ business.total_reviews }}
+                            <small> reviews</small>
+                        </h2>
+                        <div class="stars">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </div>
+
+                        <p> Scores {{ business|ci}}
+                            <small> /</small>
+                            5
+                        </p>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+            {% endif %}
+
         </div>
     </div>
+
 </div>
 {% endblock %}

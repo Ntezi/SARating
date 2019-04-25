@@ -1,13 +1,36 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from . import models
+from django.db.models import Avg
+
+from django.views.generic import TemplateView, DetailView, ListView
+from .models import Business
+
 
 # Create your views here.
 
+class IndexView(TemplateView):
+    # Just set this Class Object Attribute to the template page.
+    # template_name = 'app_name/site.html'
+    template_name = 'ratings/index.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['injectme'] = "Basic Injection!"
+        return context
 
 
-def index(request):
-    business = models.Business.objects.order_by('-ratings')
-    businesses = {"businesses": business}
-    return render(request, 'ratings/index.html', context=businesses)
-    # return HttpResponse(business)
+class BusinessListView(ListView):
+    model = Business
+    context_object_name = 'businesses'
+    ordering = ['-total_reviews']
+    paginate_by = 10  # if pagination is desired
+    template_name = 'ratings/index.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        c_average = Business.objects.aggregate(Avg('total_reviews'))
+        c_average = c_average["total_reviews__avg"]
+        context['c_average'] = c_average
+        return context
+
+
+class BusinessDetailView(DetailView):
+    pass

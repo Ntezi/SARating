@@ -18,7 +18,9 @@ from django.urls import include, path
 from ratings import views as ratings_app_view
 
 urlpatterns = [
-    path('', ratings_app_view.index, name="index"),
+    # path('', ratings_app_view.index, name="index"),
+    path('', ratings_app_view.BusinessListView.as_view()),
     path('ratings/', include('ratings.urls')),
+    # path('ratings/', include('ratings.urls', namespace='ratings')),
     path('admin/', admin.site.urls),
 ]
