@@ -20,7 +20,7 @@ class TripadvisorHotelsCrawlerSpider(scrapy.Spider):
         url = response.url
         self.log('I just visited: ' + url)
 
-        links = response.css('div.quote > a::attr(href)').extract()
+        links = response.css('div.hotels-review-list-parts-ReviewTitle__reviewTitle--2Fauz > a::attr(href)').extract()
 
         if links:
             for link in links:

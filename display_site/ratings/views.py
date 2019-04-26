@@ -21,7 +21,7 @@ class BusinessListView(ListView):
     model = Business
     context_object_name = 'businesses'
     ordering = ['-ratings']
-    paginate_by = 20  # if pagination is desired
+    # paginate_by = 50  # if pagination is desired
     template_name = 'ratings/index.html'
 
     def get_context_data(self, **kwargs):

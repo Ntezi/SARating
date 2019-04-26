@@ -1,0 +1,1 @@
+db.ratings_business.remove( {reviews: {$exists: true, $size: 0}})

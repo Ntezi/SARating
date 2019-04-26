@@ -1,8 +1,8 @@
-db.hotel.aggregate([
+db.ratings_hotel.aggregate([
     {
         $lookup:
             {
-                from: "review",
+                from: "ratings_review",
                 localField: "url",
                 foreignField: "company_url",
                 as: "reviews"
@@ -50,5 +50,5 @@ db.hotel.aggregate([
                 "total_reviews": {$size: '$reviews'},
             }
     },
-    {$out: "business"}
+    {$out: "ratings_business"}
 ])

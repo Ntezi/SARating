@@ -30,7 +30,7 @@ class TripadvisorReviewTestModel:
         self.save_results(test_data, y_test)
 
     def save_results(self, test_data, y_test):
-        result_file = 'data/results/tripadvisor_hotel_reviews_data_results.csv'
+        result_file = '../data/results/tripadvisor_hotel_reviews_data_results.csv'
         results = test_data.copy()
         results['stars'] = y_test
         print(results.shape)
@@ -38,6 +38,6 @@ class TripadvisorReviewTestModel:
 
 
 if __name__ == '__main__':
-    train_data_file_name = "data/train/yelp_hotel_travel_reviews.csv"
-    test_data_file_name = "data/test/tripadvisor_hotel_reviews_data.csv"
+    train_data_file_name = "../data/train/yelp_hotel_travel_reviews.csv"
+    test_data_file_name = "../data/test/tripadvisor_hotel_reviews_data.csv"
     TripadvisorReviewTestModel(train_data_file_name, test_data_file_name)

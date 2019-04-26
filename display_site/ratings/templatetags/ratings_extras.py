@@ -21,3 +21,15 @@ def ci(business):
 @register.filter
 def round_ratings(business):
     return round(business.ratings * 5, 1)
+
+
+@register.filter
+def stars(ratings):
+    star = ''
+    score = round(ratings * 5, 1)
+    for i in range(1, 6):
+        if score >= i:
+            star += '<span class="glyphicon glyphicon-star"></span>'
+        else:
+            star += '<span class="glyphicon glyphicon-star-empty"></span>'
+    return star
