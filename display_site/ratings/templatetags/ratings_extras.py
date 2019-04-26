@@ -16,3 +16,8 @@ def ci(business):
 
     score = round(score * 5, 1)
     return score
+
+
+@register.filter
+def round_ratings(business):
+    return round(business.ratings * 5, 1)

@@ -1,4 +1,4 @@
-db.business.aggregate([
+db.ratings_business.aggregate([
     {
         $project:
             {
@@ -19,8 +19,58 @@ db.business.aggregate([
                 "positive_reviews": 1,
                 "negative_reviews": 1,
                 "total_reviews": 1,
-                "ratings": {"$multiply": [{"$divide": ["$positive_reviews", "$total_reviews"]}, 5]}
+                "ratings": {
+                    $divide: [
+                        {
+                            $subtract: [
+                                {
+                                    $divide: [
+                                        {$add: ["$positive_reviews", 1.9208]},
+                                        {$add: ["$positive_reviews", "$negative_reviews"]}
+                                    ],
+                                },
+                                {
+                                    $multiply: [
+                                        1.96,
+                                        {
+                                            $divide: [
+                                                {
+                                                    $sqrt: {
+                                                        $add: [
+                                                            {
+                                                                $divide: [
+                                                                    {
+                                                                        $multiply: ["$positive_reviews", "$negative_reviews"]
+                                                                    },
+                                                                    {
+                                                                        $add: ["$positive_reviews", "$negative_reviews"]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            0.9604
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    $add: ["$positive_reviews", "$negative_reviews"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            $add: [
+                                {
+                                    $divide: [3.8416, {$add: ["$positive_reviews", "$negative_reviews"]}]
+                                },
+                                1
+                            ]
+                        }
+                    ]
+                },
             }
     },
-    {$out: "business"}
+    {$out: "ratings_business"}
 ])

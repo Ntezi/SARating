@@ -20,8 +20,8 @@ class IndexView(TemplateView):
 class BusinessListView(ListView):
     model = Business
     context_object_name = 'businesses'
-    ordering = ['-total_reviews']
-    paginate_by = 10  # if pagination is desired
+    ordering = ['-ratings']
+    paginate_by = 20  # if pagination is desired
     template_name = 'ratings/index.html'
 
     def get_context_data(self, **kwargs):
