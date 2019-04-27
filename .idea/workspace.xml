@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aea45dc-6374-4d3d-9d67-177b4a527f1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectors/crawler/booking_hotel_reviews_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/collectors/crawler/booking_hotel_reviews_data.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/spiders/booking_hotels_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="72" column="66" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="66" />
+            <state relative-caret-position="-11">
+              <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -50,9 +50,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/collectors/crawler/booking_hotel_reviews_data.json">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3484">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/collectors/crawler/booking_hotel_reviews_data.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="-12814" />
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -135,6 +149,7 @@
       <find>},</find>
       <find>?from=searchresults\n#hotelTmpl</find>
       <find>The Chinese managers</find>
+      <find>yamb</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -178,8 +193,8 @@
         <option value="$PROJECT_DIR$/collectors/crawler/crawler/items.py" />
         <option value="$PROJECT_DIR$/collectors/crawler/crawler/spiders/tripadvisor_hotels_crawler.py" />
         <option value="$PROJECT_DIR$/collectors/crawler/crawler/UrlHelper.py" />
-        <option value="$PROJECT_DIR$/collectors/crawler/booking_hotel_reviews_data.json" />
         <option value="$PROJECT_DIR$/collectors/crawler/crawler/spiders/booking_hotels_crawler.py" />
+        <option value="$PROJECT_DIR$/collectors/crawler/booking_hotel_reviews_data.json" />
       </list>
     </option>
   </component>
@@ -334,12 +349,12 @@
       <workItem from="1556266229071" duration="2426000" />
       <workItem from="1556287364496" duration="1983000" />
       <workItem from="1556292550117" duration="134000" />
-      <workItem from="1556355756235" duration="15860000" />
+      <workItem from="1556355756235" duration="16971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124390000" />
+    <option name="totallyTimeSpent" value="125501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1438" height="833" extended-state="0" />
@@ -384,7 +399,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/display/ratings/views.py" />
     <entry file="file://$PROJECT_DIR$/display/ratings/urls.py" />
     <entry file="file://$PROJECT_DIR$/display_site/display_site/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -628,16 +642,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/booking_hotel_reviews_data.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/spiders/booking_hotels_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="72" column="66" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="66" />
+        <state relative-caret-position="-11">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectors/crawler/booking_hotel_reviews_data.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-12814" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectors/crawler/booking_hotel_reviews_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3484">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
