@@ -11,7 +11,7 @@ from crawler.UrlHelper import UrlHelper
 class TripadvisorHotelsCrawlerSpider(scrapy.Spider):
     name = 'tripadvisor_hotels_crawler'
     allowed_domains = ['www.tripadvisor.com']
-    urls = UrlHelper.hotel_urls
+    urls = UrlHelper.tripadvisor_hotel_urls
     # urls = UrlHelper.restaurant_urls
     # urls = UrlHelper.to_do_urls
     start_urls = urls
