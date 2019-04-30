@@ -13,25 +13,28 @@
                         <h4> {{ forloop.counter }} . {{ business.name }} </h4>
                         <p class="list-group-item-text">
                             <ul>
+                                <li>Location: {{ business.location }}</li>
+<!--                                <li>Address: {{ business.address }}</li>-->
                                 <li>Category: {{ business.category }}</li>
                                 <li>Positive Reviews: {{ business.positive_reviews }}</li>
                                 <li>Negative Reviews: {{ business.negative_reviews }}</li>
+                                <li>T.A. Ratings: {{ business.star_ratings }}</li>
                             </ul>
                         </p>
                     </div>
                     <div class="col-md-6 text-center">
-                        <h2> {{ business.total_reviews }}
+                        <h4> {{ business.total_reviews }}
                             <small> reviews</small>
-                        </h2>
+                        </h4>
                         <div class="stars">
                             {{ business.ratings|stars|safe}}
                         </div>
 
-<!--                        <p> Scores {{ business|ci}}-->
-<!--                            <small> /</small>-->
-<!--                            5-->
-<!--                        </p>-->
-                        <p> Ratings {{ business|round_ratings}}
+                        <p> T.A. Ratings: {{ business.star_ratings}}
+                            <small> /</small>
+                            5
+                        </p>
+                        <p> S.A. Ratings: {{ business|round_ratings}}
                             <small> /</small>
                             5
                         </p>

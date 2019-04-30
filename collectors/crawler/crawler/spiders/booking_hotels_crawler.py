@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from crawler.review_item import ReviewItem
+from crawler.items import ReviewItem
 
 # crawl up to 6 pages of review per hotel
 max_pages_per_hotel = 6

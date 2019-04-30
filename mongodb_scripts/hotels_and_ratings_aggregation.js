@@ -6,6 +6,9 @@ db.ratings_business.aggregate([
                 "name": 1,
                 "url": 1,
                 "category": 1,
+                "location":1,
+                "address":1,
+                "star_ratings":1,
                 "reviews":
                     {
                         "_id": 1,

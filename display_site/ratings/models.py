@@ -24,6 +24,9 @@ class Business(models.Model):
         model_container=Reviews,
     )
     category = models.CharField(max_length=20)
+    location = models.CharField(max_length=20)
+    address = models.CharField(max_length=20)
+    star_ratings = models.CharField(max_length=5)
     positive_reviews = models.IntegerField()
     negative_reviews = models.IntegerField()
     total_reviews = models.IntegerField()
