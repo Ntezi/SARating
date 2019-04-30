@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aea45dc-6374-4d3d-9d67-177b4a527f1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/extractors/MongoDBImportCSV.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extractors/load.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_site/ratings/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/ratings/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_site/templates/ratings/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/templates/ratings/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/display_site/templates/ratings/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/templates/ratings/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb_scripts/hotels_and_ratings_aggregation.js" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb_scripts/hotels_and_ratings_aggregation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb_scripts/hotels_and_reviews_aggregation.js" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb_scripts/hotels_and_reviews_aggregation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extractors/LoadResults.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extractors/TripadvisorReviewTestModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/TripadvisorReviewTestModel.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,20 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="289">
+              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -55,80 +46,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/display_site/ratings/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+            <state relative-caret-position="75">
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/spiders/tripadvisor_hotels_crawler.py">
+        <entry file="file://$PROJECT_DIR$/extractors/load.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-658">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="e#24#33#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/spiders/tripadvisor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/collectors/crawler/tripadvisor_hotel_reviews_data.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-190306">
-              <caret line="1136" column="28" selection-start-line="1136" selection-start-column="28" selection-end-line="1136" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/collections/tripadvisor_hotels.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="334">
-              <caret line="650" column="83" selection-start-line="650" selection-start-column="83" selection-end-line="650" selection-end-column="83" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="32" column="16" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mongodb_scripts/hotels_and_reviews_aggregation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mongodb_scripts/remove_empty_reviews_documents.js">
+        <entry file="file://$PROJECT_DIR$/extractors/MongoDBImportCSV.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="32" selection-end-column="65" />
+              <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -166,6 +103,10 @@
       <find>If you are thinking of experiencing</find>
       <find>Mountain Gorilla View Lodge</find>
       <find>Sabyinyo Silverback</find>
+      <find>&quot;</find>
+      <find>Radisson Blu Hotel</find>
+      <find>&quot;,</find>
+      <find>Radisson Blu Hotel &amp; Convention Centre, Kigali</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -198,9 +139,7 @@
         <option value="$PROJECT_DIR$/mongodb_scripts/hotels_and_ratings_aggregation.js" />
         <option value="$PROJECT_DIR$/display_site/ratings/views.py" />
         <option value="$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py" />
-        <option value="$PROJECT_DIR$/extractors/TripadvisorReviewTestModel.py" />
         <option value="$PROJECT_DIR$/data/results/tripadvisor_hotel_reviews_data_results.csv" />
-        <option value="$PROJECT_DIR$/extractors/LoadResults.py" />
         <option value="$PROJECT_DIR$/collectors/crawler/crawler/listing_item.py" />
         <option value="$PROJECT_DIR$/collectors/crawler/crawler/UrlHelper.py" />
         <option value="$PROJECT_DIR$/collectors/crawler/booking_hotel_reviews_data.json" />
@@ -212,9 +151,17 @@
         <option value="$PROJECT_DIR$/collectors/crawler/crawler/items.py" />
         <option value="$PROJECT_DIR$/display_site/templates/ratings/base.html" />
         <option value="$PROJECT_DIR$/display_site/ratings/models.py" />
-        <option value="$PROJECT_DIR$/display_site/templates/ratings/index.html" />
         <option value="$PROJECT_DIR$/collectors/crawler/tripadvisor_hotel_reviews_data.csv" />
         <option value="$PROJECT_DIR$/collectors/crawler/crawler/spiders/tripadvisor_hotels_crawler.py" />
+        <option value="$PROJECT_DIR$/data/collections/tripadvisor_hotels.csv" />
+        <option value="$PROJECT_DIR$/display_site/templates/ratings/index.html" />
+        <option value="$PROJECT_DIR$/extractors/LoadCompanies.py" />
+        <option value="$PROJECT_DIR$/extractors/MongoDBImport.py" />
+        <option value="$PROJECT_DIR$/extractors/MongoDBImportCSV.py" />
+        <option value="$PROJECT_DIR$/extractors/LoadResults.py" />
+        <option value="$PROJECT_DIR$/extractors/Load.py" />
+        <option value="$PROJECT_DIR$/extractors/TripadvisorReviewTestModel.py" />
+        <option value="$PROJECT_DIR$/extractors/load.py" />
       </list>
     </option>
   </component>
@@ -240,28 +187,29 @@
             <path>
               <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
               <item name="SARating" type="462c0819:PsiDirectoryNode" />
-              <item name="collectors" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
               <item name="SARating" type="462c0819:PsiDirectoryNode" />
-              <item name="collectors" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="collections" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
               <item name="SARating" type="462c0819:PsiDirectoryNode" />
-              <item name="collectors" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="display_site" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
               <item name="SARating" type="462c0819:PsiDirectoryNode" />
-              <item name="collectors" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+              <item name="display_site" type="462c0819:PsiDirectoryNode" />
+              <item name="ratings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SARating" type="462c0819:PsiDirectoryNode" />
+              <item name="extractors" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -283,8 +231,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/collections" />
       <recent name="$PROJECT_DIR$/data/test" />
+      <recent name="$PROJECT_DIR$/data/collections" />
       <recent name="$PROJECT_DIR$/display_site/ratings" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/extractors" />
@@ -310,6 +258,25 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="LoadResults" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SARating" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/extractors" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/extractors/load.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="SARating" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -332,6 +299,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.LoadResults" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -378,12 +350,14 @@
       <workItem from="1556287364496" duration="1983000" />
       <workItem from="1556292550117" duration="134000" />
       <workItem from="1556355756235" duration="17116000" />
-      <workItem from="1556602169147" duration="16780000" />
+      <workItem from="1556602169147" duration="17441000" />
+      <workItem from="1556629250964" duration="2260000" />
+      <workItem from="1556633742251" duration="6306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142426000" />
+    <option name="totallyTimeSpent" value="151653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1438" height="833" extended-state="0" />
@@ -471,16 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/Classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mongodb_scripts/hotels_and_ratings_aggregation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -495,16 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/tripadvisor_hotel_reviews_data.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="179">
-          <caret line="13371" column="61" selection-start-line="13371" selection-start-column="61" selection-end-line="13371" selection-end-column="61" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/train/yelp_hotel_travel_reviews.csv">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
@@ -512,16 +466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/TrainingResults.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -541,16 +485,6 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/LoadResults.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/results/tripadvisor_hotel_reviews_data_results.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
@@ -561,38 +495,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/collections/tripadvisor_hotels.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="291">
-          <caret line="348" column="30" lean-forward="true" selection-start-line="348" selection-start-column="30" selection-end-line="348" selection-end-column="30" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/UrlHelper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3513">
           <caret line="901" column="37" selection-start-line="901" selection-start-column="37" selection-end-line="901" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/collections/tripadvisor_hotels.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-9389" />
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/TripadvisorReviewTestModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -603,20 +509,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/review_item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/listing_item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/review_item.py" />
+    <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/listing_item.py" />
     <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/spiders/booking_hotels_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -625,34 +519,6 @@
             <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/collections/tripadvisor_hotels.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="286">
-          <caret line="645" column="37" lean-forward="true" selection-start-line="645" selection-start-column="37" selection-end-line="645" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/collections/tripadvisor_hotels.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-7419" />
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/collections/tripadvisor_hotels.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="334">
-          <caret line="650" column="83" selection-start-line="650" selection-start-column="83" selection-end-line="650" selection-end-column="83" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mongodb_scripts/hotels_and_reviews_aggregation.js">
@@ -669,24 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="32" column="16" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/ratings/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -700,24 +552,115 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/test/tripadvisor_hotel_reviews_data.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="371">
+          <caret line="13846" column="26" selection-start-line="13846" selection-start-column="26" selection-end-line="13846" selection-end-column="26" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/spiders/tripadvisor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="286">
+          <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/tripadvisor_hotel_reviews_data.csv">
+    <entry file="file://$PROJECT_DIR$/data/collections/tripadvisor_hotels.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-190306">
-          <caret line="1136" column="28" selection-start-line="1136" selection-start-column="28" selection-end-line="1136" selection-end-column="28" />
+        <state relative-caret-position="2023">
+          <caret line="442" column="87" selection-start-line="442" selection-start-column="41" selection-end-line="442" selection-end-column="87" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/Preprocessor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/pymongo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/LoadCompanies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="60" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="60" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/TripadvisorReviewTestModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/Classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/MongoDBImportCSV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/TrainingResults.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/ratings/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
       </provider>
     </entry>
   </component>

@@ -9,32 +9,27 @@
                 {% for business in businesses %}
                 <a href="https://www.tripadvisor.com{{ business.url }}" class="list-group-item" target="_blank">
 
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <h4> {{ forloop.counter }} . {{ business.name }} </h4>
                         <p class="list-group-item-text">
                             <ul>
-                                <li>Location: {{ business.location }}</li>
-<!--                                <li>Address: {{ business.address }}</li>-->
-                                <li>Category: {{ business.category }}</li>
-                                <li>Positive Reviews: {{ business.positive_reviews }}</li>
-                                <li>Negative Reviews: {{ business.negative_reviews }}</li>
-                                <li>T.A. Ratings: {{ business.star_ratings }}</li>
+                                <li><b>Location:</b> {{ business.location }}</li>
+                                <li><b>Address:</b>  {{ business.address }}</li>
+                                <li><b>Category:</b>  {{ business.category }}</li>
+                                <li><b>Positive Reviews:</b>  {{ business.positive_reviews }}</li>
+                                <li><b>Negative Reviews:</b>  {{ business.negative_reviews }}</li>
+                                <li><b>T.A. Ratings:</b>  {{ business.star_ratings }}</li>
                             </ul>
                         </p>
                     </div>
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-4 text-center">
                         <h4> {{ business.total_reviews }}
                             <small> reviews</small>
                         </h4>
                         <div class="stars">
                             {{ business.ratings|stars|safe}}
                         </div>
-
-                        <p> T.A. Ratings: {{ business.star_ratings}}
-                            <small> /</small>
-                            5
-                        </p>
-                        <p> S.A. Ratings: {{ business|round_ratings}}
+                        <p> <b>S.A. Ratings:</b>  {{ business|round_ratings}}
                             <small> /</small>
                             5
                         </p>

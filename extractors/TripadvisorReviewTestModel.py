@@ -2,6 +2,7 @@ from sklearn.linear_model import LogisticRegression
 
 from Preprocessor import Preprocessor
 from Classifier import Classifier
+from load import LoadResults
 
 
 class TripadvisorReviewTestModel:
@@ -41,3 +42,4 @@ if __name__ == '__main__':
     train_data_file_name = "../data/train/yelp_hotel_travel_reviews.csv"
     test_data_file_name = "../data/test/tripadvisor_hotel_reviews_data.csv"
     TripadvisorReviewTestModel(train_data_file_name, test_data_file_name)
+    LoadResults()
