@@ -1,16 +1,37 @@
 import numpy as np
 import itertools
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split, cross_validate, GridSearchCV
 from sklearn.metrics import classification_report, confusion_matrix
 
-class TrainingResults:
+from classify import Classifier
 
-    def __init__(self, y_test, predictions):
 
-        self.plot(y_test, predictions)
+class Train:
+    def __init__(self, data, x, y, classifiers, features, classes):
 
-    def plot(self, y_test, predictions):
-        class_names = ['Positive', 'Negative']
+        self.train(data, x, y, classifiers, features, classes)
+
+    def train(self, data, x, y, classifiers, features, classes):
+        x_train, x_test, y_train, y_test = train_test_split(data[x], data[y], test_size=0.2, random_state=42)
+        print(len(x_train), len(x_test), len(y_train) + len(y_test))
+
+        for classifier in classifiers:
+            predictions = Classifier().fit_train_classifier(classifiers, features, x_train, y_train, x_test)
+
+            print('------------------------Start------------------------')
+            print(classifier)
+            print('--classification_report--')
+            report = classification_report(y_test, predictions)
+            print(report)
+            print('--confusion_matrix--')
+            report_ = confusion_matrix(y_test, predictions)
+            print(report_)
+            print('-------------------------End-------------------------')
+
+            self.plot(y_test, predictions, classes)
+
+    def plot(self, y_test, predictions, classes):
 
         # Compute confusion matrix
         cnf_matrix = confusion_matrix(y_test, predictions)
@@ -18,12 +39,12 @@ class TrainingResults:
 
         # Plot non-normalized confusion matrix
         plt.figure()
-        self.plot_confusion_matrix(cnf_matrix, classes=class_names,
+        self.plot_confusion_matrix(cnf_matrix, classes=classes,
                                    title='Confusion matrix, without normalization')
 
         # Plot normalized confusion matrix
         plt.figure()
-        self.plot_confusion_matrix(cnf_matrix, classes=class_names, normalize=True,
+        self.plot_confusion_matrix(cnf_matrix, classes=classes, normalize=True,
                                    title='Normalized confusion matrix')
 
         plt.show()
