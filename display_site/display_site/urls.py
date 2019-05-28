@@ -15,12 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from ratings import views as ratings_app_view
+from ratings import views
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
     # path('', ratings_app_view.index, name="index"),
-    path('', ratings_app_view.BusinessListView.as_view()),
+    path('', views.BusinessListView.as_view()),
+    path('', include(router.urls)),
     path('ratings/', include('ratings.urls')),
+    path('ratings-api/', include('rest_framework.urls', namespace='rest_framework')),
     # path('ratings/', include('ratings.urls', namespace='ratings')),
     path('admin/', admin.site.urls),
 ]

@@ -77,4 +77,6 @@ class GetFile:
     hotel_aspects_result_file = '../data/results/aspect_data_results.csv'
     tripadvisor_hotel_reviews_data_file = '../data/test/tripadvisor_hotel_reviews_data.csv'
     tripadvisor_hotel_reviews_result_file = '../data/results/tripadvisor_hotel_reviews_data_results.csv'
-    tripadvisor_hotel_reviews_result_with_aspects_file = '../data/results/tripadvisor_hotel_reviews_result_with_aspects_file.csv'
+    tripadvisor_hotel_reviews_result_merged_with_aspects_file = '../data/results/tripadvisor_hotel_reviews_result_merged_with_aspects_file.csv'
+    sentences_with_aspects_file = '../data/results/sentences_with_aspects_file.csv'
+    aspects_with_sentiment_aws_file = '../data/results/aspects_with_sentiment_aws_file.csv'

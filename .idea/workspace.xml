@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aea45dc-6374-4d3d-9d67-177b4a527f1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extractors/aaa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extractors/boto_nlp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_site/display_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/display_site/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_site/display_site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/display_site/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_site/ratings/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/ratings/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_site/ratings/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/ratings/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extractors/Boto.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extractors/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extractors/test_hotel_aspects.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/test_hotel_aspects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,52 +41,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="822">
-              <caret line="102" column="5" lean-forward="true" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/collectors/crawler/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/display_site/ratings/models.py">
+        <entry file="file://$PROJECT_DIR$/extractors/test_hotel_aspects.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="108">
+              <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extractors/load.py">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/pandas/core/series.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="115">
+              <caret line="950" selection-start-line="950" selection-end-line="950" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extractors/MongoDBImportCSV.py">
+        <entry file="file://$PROJECT_DIR$/extractors/classify.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+            <state relative-caret-position="135">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extractors/boto_nlp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extractors/preprocess.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,33 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/extractors/YelpReviewTrainer.py" />
-        <option value="$PROJECT_DIR$/data/test/tripadvisor_hotel_data.csv" />
-        <option value="$PROJECT_DIR$/extractors/Classiffier.py" />
-        <option value="$PROJECT_DIR$/extractors/TrainingResults.py" />
-        <option value="$PROJECT_DIR$/extractors/Classifier.py" />
-        <option value="$PROJECT_DIR$/extractors/YelpReviewTrainModel.py" />
-        <option value="$PROJECT_DIR$/extractors/Preprocessor.py" />
-        <option value="$PROJECT_DIR$/ddddd.js" />
-        <option value="$PROJECT_DIR$/ddddd.json" />
-        <option value="$PROJECT_DIR$/display/ratings/views.py" />
-        <option value="$PROJECT_DIR$/display/ratings/urls.py" />
-        <option value="$PROJECT_DIR$/display_site/ratings/admin.py" />
-        <option value="$PROJECT_DIR$/display_site/templates/ratings/business-list.html" />
-        <option value="$PROJECT_DIR$/display_site/ratings/urls.py" />
-        <option value="$PROJECT_DIR$/display_site/display_site/urls.py" />
-        <option value="$PROJECT_DIR$/display_site/templatetags/rating_filters.py" />
-        <option value="$PROJECT_DIR$/display_site/display_site/settings.py" />
-        <option value="$PROJECT_DIR$/mongodb_scripts/hotels_and_ratings_aggregation.js" />
-        <option value="$PROJECT_DIR$/display_site/ratings/views.py" />
-        <option value="$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py" />
-        <option value="$PROJECT_DIR$/data/results/tripadvisor_hotel_reviews_data_results.csv" />
-        <option value="$PROJECT_DIR$/collectors/crawler/crawler/listing_item.py" />
-        <option value="$PROJECT_DIR$/collectors/crawler/crawler/UrlHelper.py" />
-        <option value="$PROJECT_DIR$/collectors/crawler/booking_hotel_reviews_data.json" />
-        <option value="$PROJECT_DIR$/collectors/crawler/tripadvisor.csv" />
-        <option value="$PROJECT_DIR$/collectors/crawler/crawler/spiders/tripadvisor.py" />
-        <option value="$PROJECT_DIR$/mongodb_scripts/hotels_and_reviews_aggregation.js" />
         <option value="$PROJECT_DIR$/collectors/crawler/crawler/spiders/booking_hotels_crawler.py" />
         <option value="$PROJECT_DIR$/collectors/crawler/tripadvisor_hotels.csv" />
         <option value="$PROJECT_DIR$/collectors/crawler/crawler/items.py" />
@@ -162,22 +151,56 @@
         <option value="$PROJECT_DIR$/collectors/crawler/tripadvisor_hotel_reviews_data.csv" />
         <option value="$PROJECT_DIR$/collectors/crawler/crawler/spiders/tripadvisor_hotels_crawler.py" />
         <option value="$PROJECT_DIR$/data/collections/tripadvisor_hotels.csv" />
-        <option value="$PROJECT_DIR$/display_site/templates/ratings/index.html" />
         <option value="$PROJECT_DIR$/extractors/LoadCompanies.py" />
         <option value="$PROJECT_DIR$/extractors/MongoDBImport.py" />
-        <option value="$PROJECT_DIR$/extractors/MongoDBImportCSV.py" />
         <option value="$PROJECT_DIR$/extractors/LoadResults.py" />
         <option value="$PROJECT_DIR$/extractors/Load.py" />
-        <option value="$PROJECT_DIR$/extractors/TripadvisorReviewTestModel.py" />
-        <option value="$PROJECT_DIR$/extractors/load.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/collectors/crawler/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/extractors/MongoDBImportCSV.py" />
+        <option value="$PROJECT_DIR$/display_site/templates/ratings/index.html" />
+        <option value="$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py" />
+        <option value="$PROJECT_DIR$/display_site/ratings/serializers.py" />
+        <option value="$PROJECT_DIR$/display_site/ratings/views.py" />
+        <option value="$PROJECT_DIR$/display_site/display_site/settings.py" />
+        <option value="$PROJECT_DIR$/display_site/display_site/urls.py" />
+        <option value="$PROJECT_DIR$/data/results/tripadvisor_hotel_reviews_data_results_sample.json" />
+        <option value="$PROJECT_DIR$/extractors/Preprocessor.py" />
+        <option value="$PROJECT_DIR$/extractors/wordcloud.py" />
+        <option value="$PROJECT_DIR$/extractors/__init__.py" />
+        <option value="$PROJECT_DIR$/extractors/Display_Wordcloud.py" />
+        <option value="$PROJECT_DIR$/extractors/topic_modeling_Gensim.py" />
+        <option value="$PROJECT_DIR$/extractors/AspectTest.py" />
+        <option value="$PROJECT_DIR$/extractors/AspectPreprocessor.py" />
+        <option value="$PROJECT_DIR$/extractors/AspectClassifier.py" />
+        <option value="$PROJECT_DIR$/extractors/Classifier.py" />
+        <option value="$PROJECT_DIR$/extractors/model.py" />
+        <option value="$PROJECT_DIR$/extractors/YelpReviewTrainModel.py" />
+        <option value="$PROJECT_DIR$/extractors/TripadvisorReviewTestModel.py" />
+        <option value="$PROJECT_DIR$/extractors/files.py" />
+        <option value="$PROJECT_DIR$/extractors/train_hotel_aspects.py" />
+        <option value="$PROJECT_DIR$/extractors/train_yelp_reviews.py" />
+        <option value="$PROJECT_DIR$/extractors/test_tripadvisor_reviews.py" />
+        <option value="$PROJECT_DIR$/extractors/load.py" />
+        <option value="$PROJECT_DIR$/extractors/train.py" />
+        <option value="$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews_data.py" />
+        <option value="$PROJECT_DIR$/extractors/classify.py" />
+        <option value="$PROJECT_DIR$/extractors/aspects_classifier.py" />
+        <option value="$PROJECT_DIR$/extractors/Boto.py" />
+        <option value="$PROJECT_DIR$/extractors/preprocess.py" />
+        <option value="$PROJECT_DIR$/extractors/boto_nlp.py" />
+        <option value="$PROJECT_DIR$/extractors/test.py" />
+        <option value="$PROJECT_DIR$/extractors/aaa.py" />
+        <option value="$PROJECT_DIR$/extractors/test_hotel_aspects.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1438" />
-    <option name="height" value="833" />
+    <option name="width" value="1440" />
+    <option name="height" value="834" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -201,8 +224,18 @@
             <path>
               <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
               <item name="SARating" type="462c0819:PsiDirectoryNode" />
-              <item name="collectors" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SARating" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SARating" type="462c0819:PsiDirectoryNode" />
+              <item name="extractors" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -214,7 +247,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/collectors/crawler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/extractors" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -231,11 +264,11 @@
       <recent name="$PROJECT_DIR$/extractors" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/extractors" />
+      <recent name="$PROJECT_DIR$/collectors/crawler" />
       <recent name="$PROJECT_DIR$/display_site/templatetags" />
       <recent name="$PROJECT_DIR$/display_site/ratings" />
       <recent name="$PROJECT_DIR$/display_site/templates/ratings" />
-      <recent name="$PROJECT_DIR$/data/test" />
-      <recent name="$PROJECT_DIR$/data/collections" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -255,6 +288,9 @@
       <module name="SARating" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/extractors" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -345,218 +381,108 @@
       <workItem from="1556355756235" duration="17116000" />
       <workItem from="1556602169147" duration="17441000" />
       <workItem from="1556629250964" duration="2260000" />
-      <workItem from="1556633742251" duration="6919000" />
+      <workItem from="1556633742251" duration="8901000" />
+      <workItem from="1556690478777" duration="1716000" />
+      <workItem from="1556777535687" duration="548000" />
+      <workItem from="1556931015474" duration="1837000" />
+      <workItem from="1556932925667" duration="1000" />
+      <workItem from="1557726581640" duration="3306000" />
+      <workItem from="1557814418425" duration="4266000" />
+      <workItem from="1557830878444" duration="7000" />
+      <workItem from="1557910391008" duration="1075000" />
+      <workItem from="1558031331947" duration="1000" />
+      <workItem from="1558081641562" duration="50000" />
+      <workItem from="1558091135320" duration="6120000" />
+      <workItem from="1558118088162" duration="38000" />
+      <workItem from="1558118664652" duration="1318000" />
+      <workItem from="1558120020382" duration="1461000" />
+      <workItem from="1558151750695" duration="5056000" />
+      <workItem from="1558249680992" duration="1480000" />
+      <workItem from="1558258706796" duration="8471000" />
+      <workItem from="1558325593317" duration="11539000" />
+      <workItem from="1558375463002" duration="1963000" />
+      <workItem from="1558426745199" duration="5274000" />
+      <workItem from="1558510183072" duration="1206000" />
+      <workItem from="1558615957100" duration="3338000" />
+      <workItem from="1558713709228" duration="1300000" />
+      <workItem from="1558742921942" duration="5013000" />
+      <workItem from="1558898719877" duration="40251000" />
+      <workItem from="1559007070506" duration="17920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152266000" />
+    <option name="totallyTimeSpent" value="278803000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1438" height="833" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="834" extended-state="0" />
     <layout>
-      <window_info active="true" auto_hide="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27578798" />
+      <window_info auto_hide="true" content_ui="combo" id="Project" order="0" weight="0.20386267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info auto_hide="true" id="Favorites" order="2" side_tool="true" weight="0.3295129" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32928476" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32928476" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32884097" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" auto_hide="true" id="Terminal" order="11" weight="0.34412956" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.49865228" />
+      <window_info active="true" anchor="bottom" auto_hide="true" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.49865228" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32928476" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" auto_hide="true" id="SciView" order="3" sideWeight="0.49932525" weight="0.3295129" />
-      <window_info anchor="right" x="0" y="0" width="270" height="538" id="Documentation" order="4" sideWeight="0.5006748" side_tool="true" weight="0.3295129" />
+      <window_info anchor="right" x="0" y="0" width="270" height="538" id="Documentation" order="4" sideWeight="0.5006748" side_tool="true" weight="0.24391988" />
       <window_info anchor="right" auto_hide="true" id="Database" order="5" sideWeight="0.49932525" weight="0.3295129" />
     </layout>
+    <layout-to-restore>
+      <window_info auto_hide="true" content_ui="combo" id="Project" order="0" weight="0.20386267" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info auto_hide="true" id="Favorites" order="2" side_tool="true" weight="0.3295129" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32884097" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" auto_hide="true" id="Terminal" order="11" weight="0.49865228" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32928476" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" auto_hide="true" id="SciView" order="3" sideWeight="0.49932525" weight="0.3295129" />
+      <window_info anchor="right" x="0" y="0" width="270" height="538" id="Documentation" order="4" sideWeight="0.5006748" side_tool="true" visible="true" weight="0.24391988" />
+      <window_info anchor="right" auto_hide="true" id="Database" order="5" sideWeight="0.49932525" weight="0.3295129" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/extractors/aspects_classifier.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SARating$LoadResults.coverage" NAME="LoadResults Coverage Results" MODIFIED="1558099027715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extractors" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/display_site__/ratings/admin.py" />
-    <entry file="file://$PROJECT_DIR$/display_site__/ratings/forms.py" />
-    <entry file="file://$PROJECT_DIR$/display_site__/ratings/tests.py" />
-    <entry file="file://$PROJECT_DIR$/display_site__/ratings/models.py" />
-    <entry file="file://$PROJECT_DIR$/display_site__/ratings/templates/ratings/reviews_form.html" />
-    <entry file="file://$PROJECT_DIR$/display_site__/ratings/templates/ratings/reviews_list.html" />
-    <entry file="file://$PROJECT_DIR$/display_site__/ratings/templates/ratings/business_form.html" />
-    <entry file="file://$PROJECT_DIR$/display_site__/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/display_site__/display_site/settings.py" />
-    <entry file="file://$PROJECT_DIR$/display_site__/display_site/urls.py" />
-    <entry file="file://$PROJECT_DIR$/display_site__/ratings/urls.py" />
-    <entry file="file://$PROJECT_DIR$/display_site__/ratings/views.py" />
-    <entry file="file://$PROJECT_DIR$/display_site/ratings/templates/ratings/base.html" />
-    <entry file="file://$PROJECT_DIR$/display_site/ratings/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/business_list.html" />
-    <entry file="file://$PROJECT_DIR$/display_site/ratings/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/display_site/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-          <folding>
-            <element signature="e#636#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/ratings/templatetags/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/ratings/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/display_site/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongodb_scripts/hotels_and_ratings_aggregation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/train/yelp_hotel_travel_reviews.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/ratings/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/collections/booking_hotel_reviews_data.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/results/tripadvisor_hotel_reviews_data_results.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/collections/booking_hotel_reviews_data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16395">
-          <caret line="1093" column="31" selection-start-line="1093" selection-start-column="18" selection-end-line="1093" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/UrlHelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3513">
-          <caret line="901" column="37" selection-start-line="901" selection-start-column="37" selection-end-line="901" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongodb_scripts/remove_empty_reviews_documents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/review_item.py" />
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/listing_item.py" />
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/spiders/booking_hotels_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="22" column="51" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="22" selection-end-column="51" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongodb_scripts/hotels_and_reviews_aggregation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/spiders/tripadvisor_hotels_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-658">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/tripadvisor_hotel_reviews_data.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="371">
-          <caret line="13846" column="26" selection-start-line="13846" selection-start-column="26" selection-end-line="13846" selection-end-column="26" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/spiders/tripadvisor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/collections/tripadvisor_hotels.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="2023">
@@ -567,73 +493,10 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/Preprocessor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/pymongo/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/LoadCompanies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="60" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="60" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/TripadvisorReviewTestModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/Classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/MongoDBImportCSV.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/TrainingResults.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/load.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/LoadCompanies.py" />
     <entry file="file://$PROJECT_DIR$/display_site/ratings/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -641,22 +504,305 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/index.html">
+    <entry file="file://$PROJECT_DIR$/collectors/crawler/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        <state relative-caret-position="870">
+          <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
+        <state relative-caret-position="362">
           <caret line="102" column="5" lean-forward="true" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/.gitignore">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="10" selection-start-column="10" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectors/crawler/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/display_site/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/display_site/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#636#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/ratings/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/ratings/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/results/tripadvisor_hotel_reviews_data_results_sample.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="585" column="4" selection-start-line="585" selection-start-column="4" selection-end-line="585" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/alice.png" />
+    <entry file="file://$PROJECT_DIR$/extractors/rwanda.png" />
+    <entry file="file://$PROJECT_DIR$/data/results/sentences.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="12825">
+          <caret line="855" column="77" selection-start-line="855" selection-start-column="77" selection-end-line="855" selection-end-column="77" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/sklearn/naive_bayes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-631">
+          <caret line="717" column="46" lean-forward="true" selection-start-line="717" selection-start-column="46" selection-end-line="717" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/collections/sentiment_aws.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="552" lean-forward="true" selection-start-column="552" selection-end-column="552" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/topic_modeling_Gensim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/sklearn/feature_extraction/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="839" column="65" selection-start-line="839" selection-start-column="34" selection-end-line="839" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectors/crawler/crawler/UrlHelper.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/files.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/pandas/io/parsers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="669" column="52" lean-forward="true" selection-start-line="669" selection-start-column="52" selection-end-line="669" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/AspectTest.py" />
+    <entry file="file://$PROJECT_DIR$/extractors/train_hotel_aspects.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/AspectClassifier.py" />
+    <entry file="file://$PROJECT_DIR$/extractors/MongoDBImportCSV.py" />
+    <entry file="file://$PROJECT_DIR$/extractors/TripadvisorReviewTestModel.py" />
+    <entry file="file://$PROJECT_DIR$/extractors/Classifier.py" />
+    <entry file="file://$PROJECT_DIR$/extractors/TrainingResults.py" />
+    <entry file="file://$PROJECT_DIR$/extractors/YelpReviewTrainModel.py" />
+    <entry file="file://$PROJECT_DIR$/extractors/Preprocessor.py" />
+    <entry file="file://$PROJECT_DIR$/extractors/train_yelp_reviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/Display_Wordcloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/results/tripadvisor_hotel_reviews_data_results.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="25" selection-start-column="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/AspectPreprocessor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/classify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/pandas/core/series.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="950" selection-start-line="950" selection-end-line="950" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/aspects_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/boto_nlp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/aaa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/test_hotel_aspects.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
