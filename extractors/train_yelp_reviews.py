@@ -1,12 +1,10 @@
 from sklearn.feature_extraction.text import CountVectorizer, HashingVectorizer, TfidfTransformer
-from sklearn.naive_bayes import MultinomialNB, GaussianNB
 from sklearn.linear_model import LogisticRegression
-from sklearn.linear_model import SGDClassifier
-from sklearn.svm import SVC
+from sklearn.pipeline import Pipeline
 
 from train import Train
 from preprocess import Preprocess, GetFile
-
+from test import Test, ModelFiles
 
 class TrainYelpReviews:
 
@@ -14,25 +12,28 @@ class TrainYelpReviews:
         encoding = 'utf-8'
         sample = 500
 
+        x_label, y_label = 'text', 'stars'
+
         # train_data = Preprocess().get_ready_data(train_data_file, encoding, 'train')
         train_data = Preprocess().get_sample_data(train_data_file, sample, encoding)
 
-        x, y = 'text', 'stars'
-        data = Preprocess().convert_yelp_review_rating(train_data, x, y)
-        self.trainer(data, x, y)
+        train_data = Preprocess().convert_yelp_review_rating(train_data, x_label, y_label)
 
-    def trainer(self, data, x, y):
+        x, y = train_data['text'], train_data['stars']
+        self.trainer(x, y)
 
-        classifiers = []
-        classifiers.append(LogisticRegression(solver='lbfgs'))  # multi_class='ovr'
-        # clfs.append(SVC(probability=True, kernel="linear", class_weight="balanced"))
-        # clfs.append(MultinomialNB())
-        # clfs.append(SGDClassifier())
+    def trainer(self, x, y):
+        classifier = LogisticRegression(solver='lbfgs')
 
-        features = ('vect', CountVectorizer(tokenizer=Preprocess().get_text_tokens))
+        pipeline = Pipeline([('vect', CountVectorizer(analyzer=Preprocess().get_text_tokens, ngram_range=(1, 1))),
+                             ('tfidf', TfidfTransformer(use_idf=False)),
+                             ('clf', classifier), ])
+
         classes = ['Positive', 'Negative']
-        Train(data, x, y, classifiers, features, classes)
 
+        model_file = ModelFiles().logistics_model_file
+
+        Train(x, y, classifier, pipeline, classes, model_file)
 
 if __name__ == '__main__':
     TrainYelpReviews(GetFile().yelp_reviews_train_file)

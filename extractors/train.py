@@ -4,32 +4,41 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split, cross_validate, GridSearchCV
 from sklearn.metrics import classification_report, confusion_matrix
 
-from classify import Classifier
+import pickle
 
 
 class Train:
-    def __init__(self, data, x, y, classifiers, features, classes):
+    def __init__(self, x, y, classifier, pipeline, classes, model_file):
 
-        self.train(data, x, y, classifiers, features, classes)
+        self.train(x, y, classifier, pipeline, classes, model_file)
 
-    def train(self, data, x, y, classifiers, features, classes):
-        x_train, x_test, y_train, y_test = train_test_split(data[x], data[y], test_size=0.2, random_state=42)
+    def train(self, x, y, classifier, pipeline, classes, model_file):
+        x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=0)
         print(len(x_train), len(x_test), len(y_train) + len(y_test))
 
-        for classifier in classifiers:
-            predictions = Classifier().fit_train_classifier(classifiers, features, x_train, y_train, x_test)
+        train_model = pipeline.fit(x_train, y_train)
+        predictions = train_model.predict(x_test)
 
-            print('------------------------Start------------------------')
-            print(classifier)
-            print('--classification_report--')
-            report = classification_report(y_test, predictions)
-            print(report)
-            print('--confusion_matrix--')
-            report_ = confusion_matrix(y_test, predictions)
-            print(report_)
-            print('-------------------------End-------------------------')
+        print('------------------------Accuracy------------------------')
+        print(np.mean(predictions == y_test))
 
-            self.plot(y_test, predictions, classes)
+        print('------------------------Start------------------------')
+        print(classifier)
+        print('--classification_report--')
+        report = classification_report(y_test, predictions)
+        print(report)
+        print('--confusion_matrix--')
+        report_ = confusion_matrix(y_test, predictions)
+        print(report_)
+        print('-------------------------End-------------------------')
+
+        # Train naive bayes on full dataset and save model
+        model = pipeline.fit(x, y)
+
+        # save the model to disk
+        pickle.dump(model, open(model_file, 'wb'))
+
+        self.plot(y_test, predictions, classes)
 
     def plot(self, y_test, predictions, classes):
 

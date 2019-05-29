@@ -1,36 +1,35 @@
-import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer, HashingVectorizer, TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB, GaussianNB
-from sklearn.linear_model import LogisticRegression
-from sklearn.linear_model import SGDClassifier
-from sklearn.svm import SVC
+from sklearn.pipeline import Pipeline
 
 from train import Train
 from preprocess import Preprocess, GetFile
+from test import Test, ModelFiles
 
 
-class TrainYelReviews:
+class TrainHotelAspects:
 
-    def __init__(self, train_data_file, encoding):
-
+    def __init__(self, train_data_file):
+        encoding = 'latin-1'
         train_data = Preprocess().get_ready_data(train_data_file, encoding, 'train')
-        x, y = 'sentences', 'aspects'
-        self.trainer(train_data, x, y)
 
-    def trainer(self, data, x, y):
-        classifiers = []
+        x, y = train_data['sentences'], train_data['aspects']
+        self.trainer(x, y)
 
-        # classifiers.append(LogisticRegression(solver='lbfgs'))  # multi_class='ovr'
-        # classifiers.append(SVC(probability=True, kernel="linear", class_weight="balanced"))
-        classifiers.append(MultinomialNB())
-        # classifiers.append(SGDClassifier())
+    def trainer(self, x, y):
+        classifier = MultinomialNB(alpha=1e-1)
 
-        features = ('bow', CountVectorizer(analyzer=Preprocess().get_text_tokens))
-        classes = ['breakfast & food & drink', 'comfort & facilities', 'location', 'miscellaneous', 'Negative',
-                   'overall', 'service & staff', 'value for money']
-        Train(data, x, y, classifiers, features, classes)
+        pipeline = Pipeline([('vect', CountVectorizer(analyzer=Preprocess().get_text_tokens, ngram_range=(1, 1))),
+                             ('tfidf', TfidfTransformer(use_idf=False)),
+                             ('clf', classifier), ])
+
+        classes = ['breakfast & food & drink', 'comfort & facilities', 'location', 'miscellaneous', 'overall',
+                   'service & staff', 'value for money']
+
+        model_file = ModelFiles().naive_model_file
+
+        Train(x, y, classifier, pipeline, classes, model_file)
 
 
 if __name__ == '__main__':
-    encoding = 'latin-1'
-    TrainYelReviews(GetFile().hotel_aspects_train_file, encoding)
+    TrainHotelAspects(GetFile().hotel_aspects_train_file)

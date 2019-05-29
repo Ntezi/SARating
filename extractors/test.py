@@ -1,12 +1,15 @@
-from classify import Classifier
+import pickle
 
 
 class Test:
-    def __init__(self, y, test_data, classifier, features, x_train, y_train, x_test, results_file):
-        self.test(y, test_data, classifier, features, x_train, y_train, x_test, results_file)
 
-    def test(self, y,  test_data, classifier, features, x_train, y_train, x_test, results_file):
-        y_test = Classifier().fit_test_classifier(classifier, features, x_train, y_train, x_test)
+    def __init__(self, y, test_data, x_test, model_file, results_file):
+        self.test(y, test_data, x_test, model_file, results_file)
+
+    def test(self, y, test_data, x_test, model_file, results_file):
+        model = pickle.load(open(model_file, 'rb'))
+
+        y_test = model.predict(x_test)
 
         self.save_results(y, test_data, y_test, results_file)
 
@@ -15,3 +18,8 @@ class Test:
         results[y] = y_test
         print(results.shape)
         results.to_csv(results_file)
+
+
+class ModelFiles:
+    naive_model_file = '../data/python/naive_model.pkl'
+    logistics_model_file = '../data/python/logistics_model_file.pkl'
