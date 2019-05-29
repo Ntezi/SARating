@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8aea45dc-6374-4d3d-9d67-177b4a527f1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extractors/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extractors/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extractors/test_hotel_aspects.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/test_hotel_aspects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extractors/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extractors/train_hotel_aspects.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/train_hotel_aspects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extractors/train_yelp_reviews.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/train_yelp_reviews.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/extractors/test_hotel_aspects.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+            <state relative-caret-position="780">
+              <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -51,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extractors/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="69" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="69" />
+            <state>
+              <caret selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -67,43 +61,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="e#1#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/extractors/train_yelp_reviews.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="33" column="54" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#96#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extractors/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extractors/preprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+            <state relative-caret-position="531">
+              <caret line="79" column="61" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="61" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -209,8 +170,8 @@
         <option value="$PROJECT_DIR$/extractors/train.py" />
         <option value="$PROJECT_DIR$/extractors/train_yelp_reviews.py" />
         <option value="$PROJECT_DIR$/extractors/test.py" />
-        <option value="$PROJECT_DIR$/extractors/test_hotel_aspects.py" />
         <option value="$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews.py" />
+        <option value="$PROJECT_DIR$/extractors/test_hotel_aspects.py" />
       </list>
     </option>
   </component>
@@ -417,15 +378,16 @@
       <workItem from="1559054288665" duration="638000" />
       <workItem from="1559095763025" duration="2116000" />
       <workItem from="1559099429492" duration="3735000" />
-      <workItem from="1559115038357" duration="11303000" />
+      <workItem from="1559115038357" duration="14202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="297067000" />
+    <option name="totallyTimeSpent" value="299966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info auto_hide="true" content_ui="combo" id="Project" order="0" weight="0.20386267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -441,7 +403,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32884097" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.49865228" />
-      <window_info active="true" anchor="bottom" auto_hide="true" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.49865228" />
+      <window_info anchor="bottom" auto_hide="true" id="Terminal" order="11" sideWeight="0.49928468" weight="0.49865228" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32928476" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -741,20 +703,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extractors/train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#1#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/train_yelp_reviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#96#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -767,37 +739,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/extractors/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="69" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="69" />
+        <state>
+          <caret selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="79" column="61" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extractors/test_hotel_aspects.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        <state relative-caret-position="780">
+          <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#1#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/train_yelp_reviews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="33" column="54" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#96#0" expanded="true" />
           </folding>
         </state>
       </provider>
