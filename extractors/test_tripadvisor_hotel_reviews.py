@@ -9,7 +9,7 @@ class TestTripadvisorHotelReviews:
         encoding = 'utf-8'
 
         sample = 100
-        test_data = Preprocess().get_ready_data(test_data_file, encoding, 'test')
+        test_data = Preprocess().get_ready_data(test_data_file, encoding)
         # test_data = Preprocess().get_sample_data(test_data_file, sample, encoding)
 
         self.tester(test_data)

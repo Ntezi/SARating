@@ -11,7 +11,7 @@ class TrainHotelAspects:
 
     def __init__(self, train_data_file):
         encoding = 'latin-1'
-        train_data = Preprocess().get_ready_data(train_data_file, encoding, 'train')
+        train_data = Preprocess().get_ready_data(train_data_file, encoding)
 
         x, y = train_data['sentences'], train_data['aspects']
         self.trainer(x, y)

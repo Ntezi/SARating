@@ -24,14 +24,10 @@ class Preprocess:
         data = pd.read_csv(data_file, encoding=encoding)
         return data.dropna()
 
-    def get_ready_data(self, train_data_file, encoding, role):
+    def get_ready_data(self, train_data_file, encoding):
         data = self.get_data(train_data_file, encoding)
         total = len(data)
-        if role == 'train':
-            print("Total train data: {}".format(total))
-
-        if role == 'test':
-            print("Total test data: {}".format(total))
+        print("Total data: {}".format(total))
         return data
 
     def get_sample_data(self, data_file, sample, encoding):
