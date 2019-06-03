@@ -1,46 +1,89 @@
 {% extends "ratings/base.html" %}
 {% load ratings_extras %}
 {% block body_block %}
-<div class="row">
-    <div class="col-md-9">
-        <div class="well">
-            {% if businesses %}
-            <div class="list-group">
-                {% for business in businesses %}
-                <a href="https://www.tripadvisor.com{{ business.url }}" class="list-group-item" target="_blank">
 
-                    <div class="col-md-8">
-                        <h4> {{ forloop.counter }} . {{ business.name }} </h4>
-                        <p class="list-group-item-text">
-                            <ul>
-                                <li><b>Location:</b> {{ business.location }}</li>
-                                <li><b>Address:</b>  {{ business.address }}</li>
-                                <li><b>Category:</b>  {{ business.category }}</li>
-                                <li><b>Positive Reviews:</b>  {{ business.positive_reviews }}</li>
-                                <li><b>Negative Reviews:</b>  {{ business.negative_reviews }}</li>
-                                <li><b>T.A. Ratings:</b>  {{ business.star_ratings }}</li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <h4> {{ business.total_reviews }}
-                            <small> reviews</small>
-                        </h4>
-                        <div class="stars">
-                            {{ business.ratings|stars|safe}}
-                        </div>
-                        <p> <b>S.A. Ratings:</b>  {{ business|round_ratings}}
-                            <small> /</small>
-                            5
-                        </p>
-                    </div>
-                </a>
-                {% endfor %}
+<section class="banner-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
             </div>
-            {% endif %}
+            <div class="col-md-6">
 
+            </div>
         </div>
     </div>
+</section>
+<section class="section-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <h3 class="heading-large">Top Hotels</h3>
+                <div class="">
+                    {% if businesses %}
+                    <div class="card">
+                        <ul class="list-group">
+                            {% for business in businesses %}
+                            <li class="list-group-item">
+                                <a href="https://www.tripadvisor.com{{ business.url }}" target="_blank">
+                                    <div class="col-md-9">
+                                        <h5> {{ forloop.counter }} . {{ business.name }} </h5>
+                                        <p class="list-group-item-text">
+                                        <ul>
+                                            <li><b>Location:</b> {{ business.location }}</li>
+                                            <li><b>Address:</b> {{ business.address }}</li>
+                                            <li><b>Category:</b> {{ business.category }}</li>
+                                            <li><b>Positive Reviews:</b> {{ business.positive_reviews }}</li>
+                                            <li><b>Negative Reviews:</b> {{ business.negative_reviews }}</li>
+                                            <li><b>T.A. Ratings:</b> {{ business.star_ratings }}</li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 text-center" style="float: right; margin-top: -150px">
+                                        <h5> {{ business.total_reviews }}
+                                            <small> reviews</small>
+                                        </h5>
+                                        <div class="stars">
+                                            {{ business.ratings|stars|safe}}
+                                        </div>
+                                        <p><b>S.A. Ratings:</b> {{ business|round_ratings}}
+                                            <small> /</small>
+                                            5
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
 
-</div>
+                    </div>
+
+                    {% endif %}
+                </div>
+            </div>
+            <aside class="col-lg-4 side-bar col-md-12">
+                <ul class="nav nav-tabs" role="tablist" id="myTab">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#home" role="tab">Latest</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#profile" role="tab">Top</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#messages" role="tab">Featured</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content sidebar-tabing" id="nav-tabContent">
+                    <div class="tab-pane active" id="home" role="tabpanel">
+
+                    </div>
+                    <div class="tab-pane" id="profile" role="tabpanel">
+
+                    </div>
+                    <div class="tab-pane" id="messages" role="tabpanel">
+
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
 {% endblock %}

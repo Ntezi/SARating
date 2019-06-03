@@ -30,7 +30,7 @@ def stars(ratings):
     score = round(ratings * 5, 1)
     for i in range(1, 6):
         if score >= i:
-            star += '<span class="glyphicon glyphicon-star"></span>'
+            star += '<i class="fas fa-star"></i>'
         else:
-            star += '<span class="glyphicon glyphicon-star-empty"></span>'
+            star += '<i class="far fa-star"></i>'
     return star

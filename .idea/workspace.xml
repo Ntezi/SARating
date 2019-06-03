@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aea45dc-6374-4d3d-9d67-177b4a527f1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/display_site/ratings/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_site/ratings/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/ratings/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display_site/static/ratings/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display_site/static/ratings/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_site/display_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/display_site/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_site/templates/ratings/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/templates/ratings/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_site/templates/ratings/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/display_site/templates/ratings/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,38 +38,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="1" selection-end-line="1" />
+            <state relative-caret-position="269">
+              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extractors/load.py">
+        <entry file="file://$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="165">
+              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/display_site/ratings/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/display_site/ratings/migrations/0001_initial.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" column="81" lean-forward="true" selection-start-line="25" selection-start-column="81" selection-end-line="25" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -72,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/display_site/display_site/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+            <state relative-caret-position="380">
+              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
             </state>
           </provider>
         </entry>
@@ -81,8 +68,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+            <state relative-caret-position="240">
+              <caret line="27" column="88" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
+              <folding>
+                <element signature="n#section#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/display_site/static/ratings/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="25" column="89" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/display_site/static/ratings/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -92,9 +100,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -125,6 +134,7 @@
       <find>&quot;,</find>
       <find>Radisson Blu Hotel &amp; Convention Centre, Kigali</find>
       <find>reshape</find>
+      <find>car</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -136,9 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/collectors/crawler/tripadvisor_hotel_reviews_data.csv" />
-        <option value="$PROJECT_DIR$/collectors/crawler/crawler/spiders/tripadvisor_hotels_crawler.py" />
-        <option value="$PROJECT_DIR$/data/collections/tripadvisor_hotels.csv" />
         <option value="$PROJECT_DIR$/extractors/LoadCompanies.py" />
         <option value="$PROJECT_DIR$/extractors/MongoDBImport.py" />
         <option value="$PROJECT_DIR$/extractors/LoadResults.py" />
@@ -148,11 +155,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/extractors/MongoDBImportCSV.py" />
-        <option value="$PROJECT_DIR$/display_site/templates/ratings/index.html" />
-        <option value="$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py" />
         <option value="$PROJECT_DIR$/display_site/ratings/serializers.py" />
         <option value="$PROJECT_DIR$/display_site/ratings/views.py" />
-        <option value="$PROJECT_DIR$/display_site/display_site/settings.py" />
         <option value="$PROJECT_DIR$/display_site/display_site/urls.py" />
         <option value="$PROJECT_DIR$/data/results/tripadvisor_hotel_reviews_data_results_sample.json" />
         <option value="$PROJECT_DIR$/extractors/Preprocessor.py" />
@@ -187,6 +191,12 @@
         <option value="$PROJECT_DIR$/mongodb_scripts/hotels_aspects_aggregation.js" />
         <option value="$PROJECT_DIR$/extractors/load.py" />
         <option value="$PROJECT_DIR$/display_site/ratings/models.py" />
+        <option value="$PROJECT_DIR$/display_site/static/ratings/js/main.js" />
+        <option value="$PROJECT_DIR$/display_site/display_site/settings.py" />
+        <option value="$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py" />
+        <option value="$PROJECT_DIR$/display_site/templates/ratings/base.html" />
+        <option value="$PROJECT_DIR$/display_site/templates/ratings/index.html" />
+        <option value="$PROJECT_DIR$/display_site/static/ratings/css/main.css" />
       </list>
     </option>
   </component>
@@ -211,7 +221,20 @@
             <path>
               <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
               <item name="SARating" type="462c0819:PsiDirectoryNode" />
-              <item name="extractors" type="462c0819:PsiDirectoryNode" />
+              <item name="display_site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SARating" type="462c0819:PsiDirectoryNode" />
+              <item name="display_site" type="462c0819:PsiDirectoryNode" />
+              <item name="ratings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SARating" type="462c0819:PsiDirectoryNode" />
+              <item name="display_site" type="462c0819:PsiDirectoryNode" />
+              <item name="ratings" type="462c0819:PsiDirectoryNode" />
+              <item name="templatetags" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -225,6 +248,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/extractors" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -397,7 +421,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312289000" />
+    <option name="totallyTimeSpent" value="316112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="0" />
@@ -458,24 +482,6 @@
     <SUITE FILE_PATH="coverage/SARating$LoadResults.coverage" NAME="LoadResults Coverage Results" MODIFIED="1558099027715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extractors" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/collectors/crawler/scrapy.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/display_site/display_site/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -702,27 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/display_site/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/display_site/ratings/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -730,9 +715,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/ratings/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/extractors/load.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
+        <state relative-caret-position="605">
           <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -740,10 +732,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/display_site/ratings/models.py">
+    <entry file="file://$PROJECT_DIR$/display_site/static/ratings/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/ratings/templatetags/ratings_extras.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/display_site/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/templates/ratings/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="27" column="88" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
+          <folding>
+            <element signature="n#section#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_site/static/ratings/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="25" column="89" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
         </state>
       </provider>
     </entry>
