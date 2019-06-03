@@ -15,9 +15,9 @@ db.ratings_hotel.aggregate([
                 "name": 1,
                 "url": 1,
                 "category": 1,
-                "location":1,
-                "address":1,
-                "star_ratings":1,
+                "location": 1,
+                "address": 1,
+                "star_ratings": 1,
                 "reviews":
                     {
                         "_id": 1,
@@ -27,6 +27,14 @@ db.ratings_hotel.aggregate([
                         "user": 1,
                         "stars": 1,
                         "review": 1,
+                        "aspects": 1,
+                        "breakfast_food_drink": 1,
+                        "comfort_facilities": 1,
+                        "location": 1,
+                        "miscellaneous": 1,
+                        "overall": 1,
+                        "service_staff": 1,
+                        "value_for_money": 1,
                     },
                 "positive_reviews":
                     {
@@ -55,4 +63,4 @@ db.ratings_hotel.aggregate([
     },
     {$out: "ratings_business"}
 ]);
-db.ratings_business.remove( {reviews: {$exists: true, $size: 0}})
+db.ratings_business.remove({reviews: {$exists: true, $size: 0}})

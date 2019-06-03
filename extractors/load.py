@@ -31,8 +31,7 @@ class MongoDBImportCSV:
 class LoadResults:
     db = 'sa_rating'
     collection = 'ratings_review'
-    # file_path = '../data/results/tripadvisor_hotel_reviews_data_results.csv'
-    file_path = GetFile().tripadvisor_hotel_reviews_result_file
+    file_path = GetFile().tripadvisor_hotel_reviews_result_merged_with_aspects_file
 
     def __init__(self):
         MongoDBImportCSV(self.file_path, self.db, self.collection)

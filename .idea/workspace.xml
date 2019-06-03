@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8aea45dc-6374-4d3d-9d67-177b4a527f1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extractors/test_hotel_aspects.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/test_hotel_aspects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extractors/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractors/load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb_scripts/hotels_and_ratings_aggregation.js" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb_scripts/hotels_and_ratings_aggregation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb_scripts/hotels_and_reviews_aggregation.js" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb_scripts/hotels_and_reviews_aggregation.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extractors/test_hotel_aspects.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+            <state relative-caret-position="231">
+              <caret line="79" column="109" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="109" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -43,31 +45,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extractors/test.py">
+        <entry file="file://$PROJECT_DIR$/extractors/load.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extractors/train_hotel_aspects.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extractors/preprocess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="79" column="61" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="61" />
+            <state relative-caret-position="335">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongodb_scripts/hotels_and_reviews_aggregation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="45" column="78" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mongodb_scripts/hotels_aspects_aggregation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongodb_scripts/hotels_and_ratings_aggregation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -121,9 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/collectors/crawler/tripadvisor_hotels.csv" />
-        <option value="$PROJECT_DIR$/collectors/crawler/crawler/items.py" />
-        <option value="$PROJECT_DIR$/display_site/templates/ratings/base.html" />
         <option value="$PROJECT_DIR$/display_site/ratings/models.py" />
         <option value="$PROJECT_DIR$/collectors/crawler/tripadvisor_hotel_reviews_data.csv" />
         <option value="$PROJECT_DIR$/collectors/crawler/crawler/spiders/tripadvisor_hotels_crawler.py" />
@@ -158,20 +166,23 @@
         <option value="$PROJECT_DIR$/extractors/TripadvisorReviewTestModel.py" />
         <option value="$PROJECT_DIR$/extractors/files.py" />
         <option value="$PROJECT_DIR$/extractors/test_tripadvisor_reviews.py" />
-        <option value="$PROJECT_DIR$/extractors/load.py" />
         <option value="$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews_data.py" />
         <option value="$PROJECT_DIR$/extractors/classify.py" />
         <option value="$PROJECT_DIR$/extractors/aspects_classifier.py" />
         <option value="$PROJECT_DIR$/extractors/Boto.py" />
         <option value="$PROJECT_DIR$/extractors/boto_nlp.py" />
         <option value="$PROJECT_DIR$/extractors/aaa.py" />
+        <option value="$PROJECT_DIR$/extractors/train.py" />
+        <option value="$PROJECT_DIR$/extractors/test.py" />
         <option value="$PROJECT_DIR$/extractors/preprocess.py" />
         <option value="$PROJECT_DIR$/extractors/train_hotel_aspects.py" />
-        <option value="$PROJECT_DIR$/extractors/train.py" />
         <option value="$PROJECT_DIR$/extractors/train_yelp_reviews.py" />
-        <option value="$PROJECT_DIR$/extractors/test.py" />
         <option value="$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews.py" />
         <option value="$PROJECT_DIR$/extractors/test_hotel_aspects.py" />
+        <option value="$PROJECT_DIR$/extractors/load.py" />
+        <option value="$PROJECT_DIR$/mongodb_scripts/hotels_and_ratings_aggregation.js" />
+        <option value="$PROJECT_DIR$/mongodb_scripts/hotels_and_reviews_aggregation.js" />
+        <option value="$PROJECT_DIR$/mongodb_scripts/hotels_aspects_aggregation.js" />
       </list>
     </option>
   </component>
@@ -197,12 +208,12 @@
             <path>
               <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
               <item name="SARating" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="extractors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
               <item name="SARating" type="462c0819:PsiDirectoryNode" />
-              <item name="extractors" type="462c0819:PsiDirectoryNode" />
+              <item name="mongodb_scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -378,16 +389,19 @@
       <workItem from="1559054288665" duration="638000" />
       <workItem from="1559095763025" duration="2116000" />
       <workItem from="1559099429492" duration="3735000" />
-      <workItem from="1559115038357" duration="14202000" />
+      <workItem from="1559115038357" duration="15152000" />
+      <workItem from="1559320821326" duration="327000" />
+      <workItem from="1559355661933" duration="1579000" />
+      <workItem from="1559361768074" duration="3963000" />
+      <workItem from="1559458285877" duration="4164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="299966000" />
+    <option name="totallyTimeSpent" value="310949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info auto_hide="true" content_ui="combo" id="Project" order="0" weight="0.20386267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -404,7 +418,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.49865228" />
       <window_info anchor="bottom" auto_hide="true" id="Terminal" order="11" sideWeight="0.49928468" weight="0.49865228" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32928476" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32884097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -440,42 +454,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/extractors/aspects_classifier.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SARating$LoadResults.coverage" NAME="LoadResults Coverage Results" MODIFIED="1558099027715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extractors" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/collections/tripadvisor_hotels.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="2023">
-          <caret line="442" column="87" selection-start-line="442" selection-start-column="41" selection-end-line="442" selection-end-column="87" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/pymongo/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/LoadCompanies.py" />
-    <entry file="file://$PROJECT_DIR$/display_site/ratings/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collectors/crawler/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
@@ -572,13 +554,13 @@
     <entry file="file://$PROJECT_DIR$/extractors/alice.png" />
     <entry file="file://$PROJECT_DIR$/extractors/rwanda.png" />
     <entry file="file://$PROJECT_DIR$/data/results/sentences.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="12825">
           <caret line="855" column="77" selection-start-line="855" selection-start-column="77" selection-end-line="855" selection-end-column="77" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extractors/__init__.py">
@@ -634,40 +616,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/load.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/results/tripadvisor_hotel_reviews_data_results.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
           <caret column="25" selection-start-column="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/AspectPreprocessor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/aspects_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,10 +648,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/classify.py">
+    <entry file="file://$PROJECT_DIR$/extractors/classify.py" />
+    <entry file="file://$PROJECT_DIR$/extractors/AspectPreprocessor.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/pandas/io/formats/format.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        <state relative-caret-position="239">
+          <caret line="300" column="8" selection-start-line="300" selection-start-column="8" selection-end-line="300" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/aspects_classifier.py" />
+    <entry file="file://$PROJECT_DIR$/extractors/train_yelp_reviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/test_hotel_aspects.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="79" column="109" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="109" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractors/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -710,30 +702,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews.py">
+    <entry file="file://$PROJECT_DIR$/extractors/train_hotel_aspects.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#1#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/train_yelp_reviews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+        <state relative-caret-position="195">
+          <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
           <folding>
             <element signature="e#0#96#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/train_hotel_aspects.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -744,23 +719,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/preprocess.py">
+    <entry file="file://$PROJECT_DIR$/extractors/load.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="79" column="61" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="61" />
+        <state relative-caret-position="335">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractors/test_hotel_aspects.py">
+    <entry file="file://$PROJECT_DIR$/mongodb_scripts/hotels_and_ratings_aggregation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongodb_scripts/hotels_and_reviews_aggregation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="45" column="78" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongodb_scripts/hotels_aspects_aggregation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
         </state>
       </provider>
     </entry>
