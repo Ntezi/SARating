@@ -64,7 +64,7 @@
             </button>
             <div class="collapse navbar-collapse" id="exCollapsingNavbar2">
                 <ul class="nav navbar-nav ">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'ratings:list' %}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
@@ -81,6 +81,9 @@
 {% block body_block %}
 
 {% endblock %}
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

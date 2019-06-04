@@ -1,0 +1,146 @@
+{% extends "ratings/base.html" %}
+{% load ratings_extras %}
+{% block body_block %}
+<section class="section-01">
+    <div class="container">
+        <div class="row">
+           <h3 class="heading-large">{{ business.name }}</h3>
+            <div class="col-lg-6 col-md-6">
+                <div id="pie-chart" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto; border-right: black 2px solid;"></div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div id="column-chart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script>
+    positive_reviews = {{business.positive_reviews}}
+    negative_reviews = {{business.negative_reviews}}
+
+    Highcharts.chart('pie-chart', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Classification of Reviews'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        credits: {
+            enabled: false
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Reviews',
+            colorByPoint: true,
+            data: [{
+                name: 'Positive',
+                y: positive_reviews
+            }, {
+                name: 'Negative',
+                y: negative_reviews
+            }]
+        }]
+    });
+</script>
+
+<script>
+    breakfast_food_drink = {{business.breakfast_food_drink}}
+    comfort_facilities = {{business.comfort_facilities}}
+    location_aspects = {{business.location_aspects}}
+    miscellaneous = {{business.miscellaneous}}
+    overall = {{business.overall}}
+    service_staff = {{business.service_staff}}
+    value_for_money = {{business.value_for_money}}
+
+    Highcharts.chart('column-chart', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Classification of aspects'
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: 'Total number of aspects'
+            }
+
+        },
+        legend: {
+            enabled: false
+        },
+        credits: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                }
+            }
+        },
+
+        series: [
+            {
+                name: "Aspects",
+                colorByPoint: true,
+                data: [
+                    {
+                        name: "Breakfast & Food & Drink",
+                        y: breakfast_food_drink,
+                    },
+                    {
+                        name: "Comfort & Facilities",
+                        y: comfort_facilities,
+                    },
+                    {
+                        name: "Location",
+                        y: location_aspects,
+                    },
+                    {
+                        name: "Miscellaneous",
+                        y: miscellaneous,
+                    },
+                    {
+                        name: "Overall",
+                        y: overall,
+                    },
+                    {
+                        name: "Service & Staff",
+                        y: service_staff,
+                    },
+                    {
+                        name: "Value for Money",
+                        y: value_for_money,
+                    }
+                ]
+            }
+        ],
+    });
+</script>
+{% endblock %}

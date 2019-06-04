@@ -34,3 +34,8 @@ def stars(ratings):
         else:
             star += '<i class="far fa-star"></i>'
     return star
+
+
+@register.filter(name='get_id')
+def get_id(obj, attribute):
+    return getattr(obj, attribute)

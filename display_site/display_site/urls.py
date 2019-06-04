@@ -26,7 +26,7 @@ urlpatterns = [
     # path('', ratings_app_view.index, name="index"),
     path('', views.BusinessListView.as_view()),
     path('', include(router.urls)),
-    path('ratings/', include('ratings.urls')),
+    path('', include('ratings.urls')),
     path('ratings-api/', include('rest_framework.urls', namespace='rest_framework')),
     # path('ratings/', include('ratings.urls', namespace='ratings')),
     path('admin/', admin.site.urls),

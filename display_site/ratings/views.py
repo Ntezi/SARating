@@ -3,14 +3,22 @@ from django.db.models import Avg
 from django.views.generic import TemplateView, DetailView, ListView
 from .models import Business
 
-
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from .serializers import UserSerializer, GroupSerializer
-
+from django.shortcuts import get_object_or_404, render
 
 
 # Create your views here.
+
+def business_detail_view(request, id):
+    business = Business.objects.get(_id=id)
+    print(business)
+
+    # business = get_object_or_404(Business, pk)
+    context = {'business': business}
+    return render(request, 'ratings/detail.html', context)
+
 
 class IndexView(TemplateView):
     # Just set this Class Object Attribute to the template page.
@@ -39,7 +47,16 @@ class BusinessListView(ListView):
 
 
 class BusinessDetailView(DetailView):
-    pass
+    model = Business
+    context_object_name = 'business'
+    # slug_field = 'name'
+    # slug_url_kwarg = 'name'
+    template_name = 'ratings/detail.html'
+
+    def get(self, request, id):
+        business = Business.objects.get(_id=id)
+        context = {'business': business}
+        return render(request, 'ratings/detail.html', context)
 
 
 class UserViewSet(viewsets.ModelViewSet):
