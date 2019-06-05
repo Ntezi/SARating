@@ -20,6 +20,10 @@ def business_detail_view(request, id):
     return render(request, 'ratings/detail.html', context)
 
 
+def about(request):
+    return render(request, 'ratings/about.html')
+
+
 class IndexView(TemplateView):
     # Just set this Class Object Attribute to the template page.
     # template_name = 'app_name/site.html'
