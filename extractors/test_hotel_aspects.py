@@ -74,30 +74,37 @@ class ClassifyHotelAspects:
         aspects = self.classify_aspects(test_data)
         df_aspects = pd.DataFrame(aspects, columns=['index', 'sentences', 'aspects'])
 
+        # merge aspects with reviews
+        self.merge_aspects_with_reviews(test_data, df_aspects)
+
+        aspects_file = GetFile().aspects_file
+        df_aspects.to_csv(aspects_file)
+
+        # Sentiments analysis with aws boto at sentence level
+        # BotoNLP(aspects_file)
+
+    def merge_aspects_with_reviews(self, test_data, df_aspects):
+
         grouped_aspects = df_aspects.groupby('index')['aspects'].apply(lambda x: ';'.join(x.astype(str))).reset_index()
         merged_aspects_with_reviews = pd.merge(test_data, grouped_aspects[['index', 'aspects']], on='index')
-
-        result_merged_with_aspects_file = GetFile().tripadvisor_hotel_reviews_result_merged_with_aspects_file
 
         merged_aspects_with_reviews['aspects'] = merged_aspects_with_reviews['aspects'].str.split(';')
 
         merged_aspects_with_reviews['breakfast_food_drink'] = self.get_aspect_num(merged_aspects_with_reviews,
-                                                                           'breakfast & food & drink')
+                                                                                  'breakfast & food & drink')
         merged_aspects_with_reviews['comfort_facilities'] = self.get_aspect_num(merged_aspects_with_reviews,
-                                                                           'comfort & facilities')
+                                                                                'comfort & facilities')
         merged_aspects_with_reviews['location'] = self.get_aspect_num(merged_aspects_with_reviews, 'location')
         merged_aspects_with_reviews['miscellaneous'] = self.get_aspect_num(merged_aspects_with_reviews, 'miscellaneous')
         merged_aspects_with_reviews['overall'] = self.get_aspect_num(merged_aspects_with_reviews, 'overall')
         merged_aspects_with_reviews['service_staff'] = self.get_aspect_num(merged_aspects_with_reviews,
                                                                            'service & staff')
         merged_aspects_with_reviews['value_for_money'] = self.get_aspect_num(merged_aspects_with_reviews,
-                                                                           'value for money')
+                                                                             'value for money')
 
+        result_merged_with_aspects_file = GetFile().tripadvisor_hotel_reviews_result_merged_with_aspects_file
         merged_aspects_with_reviews.to_csv(result_merged_with_aspects_file)
 
-        # Sentiments analysis with aws boto at sentence level
-        # aspects_with_sentiment_aws_file = GetFile().aspects_with_sentiment_aws_file
-        # BotoNLP(sentences_with_aspects_file)
 
     def merge_aspects_and_sentiments_with_reviews(self, aspects_with_sentiment_aws_file):
 
@@ -109,6 +116,8 @@ class ClassifyHotelAspects:
 
         x.stack()
         a = x.to_dict('index')
+
+        print(a)
 
 
 if __name__ == '__main__':
