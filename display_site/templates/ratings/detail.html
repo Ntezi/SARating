@@ -4,9 +4,10 @@
 <section class="section-01">
     <div class="container">
         <div class="row">
-           <h3 class="heading-large">{{ business.name }}</h3>
+            <h3 class="heading-large">{{ business.name }}</h3>
             <div class="col-lg-6 col-md-6">
-                <div id="pie-chart" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto; border-right: black 2px solid;"></div>
+                <div id="pie-chart"
+                     style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto; border-right: black 2px solid;"></div>
             </div>
             <div class="col-lg-6 col-md-6">
                 <div id="column-chart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
@@ -46,12 +47,13 @@
                     enabled: true,
                     format: '<b>{point.name}</b>: {point.percentage:.1f} %',
                     style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black',
+                        fontSize: '14px'
                     }
                 }
             }
         },
-        colors : ['green', 'red'],
+        colors: ['green', 'red'],
         series: [{
             name: 'Reviews',
             colorByPoint: true,
@@ -67,6 +69,7 @@
 </script>
 
 <script>
+
     breakfast_food_drink = {{business.breakfast_food_drink}}
     comfort_facilities = {{business.comfort_facilities}}
     location_aspects = {{business.location_aspects}}
@@ -74,7 +77,6 @@
     overall = {{business.overall}}
     service_staff = {{business.service_staff}}
     value_for_money = {{business.value_for_money}}
-
     Highcharts.chart('column-chart', {
         chart: {
             type: 'column'
@@ -83,13 +85,28 @@
             text: 'Classification of aspects'
         },
         xAxis: {
-            type: 'category'
+            type: 'category',
+            labels: {
+                style: {
+                    color: 'black',
+                    fontSize: '14px'
+                }
+            },
         },
         yAxis: {
             title: {
-                text: 'Total number of aspects'
-            }
-
+                text: 'Total number of aspects',
+                style: {
+                    color: 'black',
+                    fontSize: '14px'
+                }
+            },
+            labels: {
+                style: {
+                    color: 'black',
+                    fontSize: '14px'
+                }
+            },
         },
         legend: {
             enabled: false
