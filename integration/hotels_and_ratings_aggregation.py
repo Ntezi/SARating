@@ -1,0 +1,71 @@
+from pymongo import MongoClient
+
+client = MongoClient(port=27017)
+db = client.sa_rating
+
+db.ratings_hotel.aggregate([
+    {
+        "$lookup":
+            {
+                "from": "ratings_review",
+                "localField": "url",
+                "foreignField": "company_url",
+                "as": "reviews"
+            }
+    },
+    {
+        "$project":
+            {
+                "_id": 0,
+                "name": 1,
+                "url": 1,
+                "category": 1,
+                "location": 1,
+                "address": 1,
+                "star_ratings": 1,
+                "reviews":
+                    {
+                        "_id": 1,
+                        "title": 1,
+                        "date": 1,
+                        "stay_date": 1,
+                        "user": 1,
+                        "stars": 1,
+                        "review": 1,
+                        "aspects": 1,
+                        "breakfast_food_drink": 1,
+                        "comfort_facilities": 1,
+                        "location": 1,
+                        "miscellaneous": 1,
+                        "overall": 1,
+                        "service_staff": 1,
+                        "value_for_money": 1,
+                    },
+                "positive_reviews":
+                    {
+                        "$reduce":
+                            {
+                                "input": "$reviews",
+                                "initialValue": 0,
+                                "in": {
+                                    " $add": ["$$value", {"$cond": [{"$eq": ["$$this.stars", 1]}, 1, 0]}]
+                                }
+                            }
+                    },
+                "negative_reviews":
+                    {
+                        "$reduce":
+                            {
+                                "input": "$reviews",
+                                "initialValue": 0,
+                                "in": {
+                                    " $add": ["$$value", {"$cond": [{"$eq": ["$$this.stars", 0]}, 1, 0]}]
+                                }
+                            }
+                    },
+                "total_reviews": {"$size": '$reviews'},
+            }
+    },
+    {"$out": "ratings_business_"}
+])
+db.ratings_business_.delete_many({"reviews": {"$exists": "true", "$size": 0}})
