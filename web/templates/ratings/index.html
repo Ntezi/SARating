@@ -20,21 +20,21 @@
                                         <ul>
                                             <li><b>Location:</b> {{ business.location }}</li>
                                             <li><b>Address:</b> {{ business.address }}</li>
-                                            <li><b>Category:</b> {{ business.category }}</li>
-                                            <li><b>Positive Reviews:</b> {{ business.positive_reviews }}</li>
-                                            <li><b>Negative Reviews:</b> {{ business.negative_reviews }}</li>
-                                            <li><b>T.A. Ratings:</b> {{ business.star_ratings }}</li>
+<!--                                            <li><b>Category:</b> {{ business.category }}</li>-->
+<!--                                            <li><b>Positive Reviews:</b> {{ business.positive_reviews }}</li>-->
+<!--                                            <li><b>Negative Reviews:</b> {{ business.negative_reviews }}</li>-->
+<!--                                            <li><b>T.A. Ratings:</b> {{ business.star_ratings }}</li>-->
                                         </ul>
                                         </p>
                                     </div>
-                                    <div class="col-md-3 text-center" style="float: right; margin-top: -150px">
+                                    <div class="col-md-3 text-center" style="float: right; margin-top: -100px">
                                         <h5> {{ business.total_reviews }}
                                             <small> reviews</small>
                                         </h5>
                                         <div class="stars">
                                             {{ business.ratings|stars|safe}}
                                         </div>
-                                        <p><b>S.A. Ratings:</b> {{ business|round_ratings}}
+                                        <p>{{ business|round_ratings}}
                                             <small> /</small>
                                             5
                                         </p>

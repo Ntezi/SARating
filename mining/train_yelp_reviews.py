@@ -14,8 +14,8 @@ class TrainYelpReviews:
 
         x_label, y_label = 'text', 'stars'
 
-        # train_data = Preprocess().get_ready_data(train_data_file, encoding')
-        train_data = Preprocess().get_sample_data(train_data_file, sample, encoding)
+        train_data = Preprocess().get_ready_data(train_data_file, encoding)
+        # train_data = Preprocess().get_sample_data(train_data_file, sample, encoding)
 
         train_data = Preprocess().convert_yelp_review_rating(train_data, x_label, y_label)
 
