@@ -1,17 +1,11 @@
 import pandas as pd
 
-categories_ = {
+hotels_categories = {
     "Bed & Breakfast",
-    "Campgrounds",
-    "Car Rental",
     "Guest Houses",
     "Hostels",
     "Hotels",
-    "Rest Stops",
-    "RV Parks",
-    "RV Rental",
     "Resorts",
-    "Luggage Storage",
     "Vacation Rentals"
 }
 
@@ -34,7 +28,6 @@ yelp_review['year'] = yelp_review.date.dt.year
 
 business_ids = yelp_business.business_id.values
 
-hotels_categories = categories_
 
 # print("Hotels Categories): {}".format(hotels_categories))
 
@@ -60,7 +53,7 @@ hotels_travel_reviews = yelp_review.loc[yelp_review['business_id'].isin(hotels_t
 total_hotels_travel_reviews = len(hotels_travel_reviews)
 print("Total hotels & travel reviews: {}".format(total_hotels_travel_reviews))
 
-file_name = 'yelp_hotel_travel_reviews.csv'
+file_name = 'yelp_hotel_travel_reviews_.csv'
 hotels_travel_reviews.to_csv(file_name)
 # with open(file_name, 'a') as f:
 #     hotels_travel_reviews.to_csv(f, header=False)
