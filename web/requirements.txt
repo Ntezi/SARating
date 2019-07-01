@@ -120,7 +120,6 @@ mrjob==0.6.9
 msgpack==0.6.1
 multipledispatch==0.6.0
 murmurhash==1.0.2
-navigator-updater==0.2.1
 nbconvert==5.4.1
 nbformat==4.4.0
 networkx==2.2
