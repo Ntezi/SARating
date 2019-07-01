@@ -83,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="204">
+              <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -133,7 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>radi</find>
       <find>Onomo_Hotel_Kigali</find>
       <find>\n/</find>
       <find>},</find>
@@ -163,6 +162,7 @@
       <find>b</find>
       <find>JSON_DIR</find>
       <find>iris.data</find>
+      <find>clyent</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -475,12 +475,12 @@
       <workItem from="1561811710427" duration="2684000" />
       <workItem from="1561912372477" duration="1004000" />
       <workItem from="1561941552180" duration="226000" />
-      <workItem from="1561951777574" duration="5572000" />
+      <workItem from="1561951777574" duration="5826000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400313000" />
+    <option name="totallyTimeSpent" value="400567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="6" />
@@ -926,8 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="204">
+          <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
         </state>
       </provider>
     </entry>
