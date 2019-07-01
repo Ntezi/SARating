@@ -1,8 +1,8 @@
 import numpy as np
 import itertools
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split, cross_validate, GridSearchCV
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.model_selection import train_test_split, cross_validate, GridSearchCV, cross_val_score, cross_val_predict
+from sklearn.metrics import classification_report, confusion_matrix, make_scorer, recall_score, precision_recall_curve
 
 import pickle
 
@@ -19,10 +19,10 @@ class Train:
         train_model = pipeline.fit(x_train, y_train)
         predictions = train_model.predict(x_test)
 
-        print('------------------------Accuracy------------------------')
-        print(np.mean(predictions == y_test))
+        print('------------------------Accuracy Score------------------------')
+        print(train_model.score(x_test, y_test))
 
-        print('------------------------Start------------------------')
+        print('------------------------Confusion Matrix------------------------')
         print(classifier)
         print('--classification_report--')
         report = classification_report(y_test, predictions)
@@ -30,9 +30,21 @@ class Train:
         print('--confusion_matrix--')
         report_ = confusion_matrix(y_test, predictions)
         print(report_)
-        print('-------------------------End-------------------------')
 
-        # Train naive bayes on full dataset and save model
+        self.precision_recall(y_test, predictions)
+
+        print('-------------------------End Confusion Matrix-------------------------')
+
+        # print('------------------------Cross Validation------------------------')
+
+        # scoring = {'prec_macro': 'precision_macro', 'rec_macro': make_scorer(recall_score, average='macro')}
+        # scores = cross_val_score(train_model, x_test, y_test, cv=5)
+        # print(scores)
+
+        # pred = cross_val_predict(train_model, x_test, y_test, cv=5)
+        # plt.scatter(y_test, pred)
+        # print('-------------------------End Cross Validation-------------------------')
+        # Train model on full dataset and save model
         model = pipeline.fit(x, y)
 
         # save the model to disk
@@ -91,3 +103,15 @@ class Train:
         plt.ylabel('True label')
         plt.xlabel('Predicted label')
         plt.tight_layout()
+
+    def plot_cross_validation(self):
+        pass
+
+    def precision_recall(self, y_test, predictions):
+        precision, recall, thresholds = precision_recall_curve(y_test, predictions)
+        # create plot
+        plt.plot(precision, recall, label='Precision-recall curve')
+        plt.xlabel('Precision')
+        plt.ylabel('Recall')
+        plt.title('Precision-recall curve')
+        plt.legend(loc="lower left")
