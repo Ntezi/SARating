@@ -23,15 +23,15 @@ class Reviews(models.Model):
 
 
 class Business(models.Model):
-    _id = models.ObjectIdField()
+    # _id = models.ObjectIdField()
     name = models.CharField(max_length=255)
     url = models.URLField(unique=True)
-    reviews = models.ArrayModelField(
-        model_container=Reviews,
-    )
+    # reviews = models.ArrayModelField(
+    #     model_container=Reviews,
+    # )
     category = models.CharField(max_length=20, default='NONE')
     location = models.CharField(max_length=20, default='NONE')
-    address = models.CharField(max_length=20, default='NONE')
+    # address = models.CharField(max_length=20, default='NONE')
     star_ratings = models.CharField(max_length=5, default='NONE')
     positive_reviews = models.IntegerField(default=0)
     negative_reviews = models.IntegerField(default=0)

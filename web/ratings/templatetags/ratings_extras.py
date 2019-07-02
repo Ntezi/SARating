@@ -36,6 +36,6 @@ def stars(ratings):
     return star
 
 
-@register.filter(name='get_id')
-def get_id(obj, attribute):
-    return getattr(obj, attribute)
+# @register.filter(name='get_id')
+# def get_id(obj, attribute):
+#     return getattr(obj, attribute)

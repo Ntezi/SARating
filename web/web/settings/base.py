@@ -86,11 +86,26 @@ WSGI_APPLICATION = 'web.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'sa_rating',
+#         # 'HOST': 'your-db-host',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'sa_rating',
-        # 'HOST': 'your-db-host',
+        'USER': 'root',
+        'PASSWORD': 'mysqlroot',
+        # 'HOST': '/Applications/MAMP/tmp/mysql/mysql.sock',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
+
     }
 }
 

@@ -31,7 +31,7 @@ class Train:
         report_ = confusion_matrix(y_test, predictions)
         print(report_)
 
-        self.precision_recall(y_test, predictions)
+        # self.precision_recall(y_test, predictions)
 
         print('-------------------------End Confusion Matrix-------------------------')
 

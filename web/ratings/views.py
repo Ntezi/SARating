@@ -12,7 +12,7 @@ from django.shortcuts import get_object_or_404, render
 # Create your views here.
 
 def business_detail_view(request, id):
-    business = Business.objects.get(_id=id)
+    business = Business.objects.get(id=id)
     print(business)
 
     # business = get_object_or_404(Business, pk)
