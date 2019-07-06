@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8aea45dc-6374-4d3d-9d67-177b4a527f1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ratings/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ratings/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/ratings/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/static/ratings/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/ratings/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/static/ratings/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/ratings/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/templates/ratings/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/ratings/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/templates/ratings/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/ratings/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/templates/ratings/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/ratings/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/templates/ratings/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/web/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/web/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,20 +43,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="108">
+              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/web/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="435">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
               <folding>
                 <element signature="e#627#659#0" expanded="true" />
               </folding>
@@ -150,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/extractors/test.py" />
         <option value="$PROJECT_DIR$/extractors/preprocess.py" />
         <option value="$PROJECT_DIR$/extractors/train_hotel_aspects.py" />
         <option value="$PROJECT_DIR$/extractors/train_yelp_reviews.py" />
@@ -201,6 +190,7 @@
         <option value="$PROJECT_DIR$/web/ratings/views.py" />
         <option value="$PROJECT_DIR$/web/web/settings/base.py" />
         <option value="$PROJECT_DIR$/web/web/urls.py" />
+        <option value="$PROJECT_DIR$/web/ratings/templates/ratings/base.html" />
       </list>
     </option>
   </component>
@@ -226,27 +216,6 @@
               <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
               <item name="SARating" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SARating" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="ratings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SARating" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="ratings" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SARating" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="ratings" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="ratings" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
@@ -473,20 +442,19 @@
       <workItem from="1561951777574" duration="8231000" />
       <workItem from="1562037938128" duration="2908000" />
       <workItem from="1562250934696" duration="1116000" />
-      <workItem from="1562405740275" duration="2357000" />
+      <workItem from="1562405740275" duration="3332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="409353000" />
+    <option name="totallyTimeSpent" value="410328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="837" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info auto_hide="true" id="Favorites" order="1" side_tool="true" weight="0.3295129" />
-      <window_info auto_hide="true" content_ui="combo" id="Project" order="2" weight="0.33333334" />
+      <window_info active="true" auto_hide="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -877,20 +845,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/ratings/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -913,11 +871,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/web/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="435">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
           <folding>
             <element signature="e#627#659#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
         </state>
       </provider>
     </entry>
