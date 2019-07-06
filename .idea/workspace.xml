@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8aea45dc-6374-4d3d-9d67-177b4a527f1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ratings/templates/ratings/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/templates/ratings/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/web/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ratings/templates/ratings/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/templates/ratings/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +39,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="30">
+              <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#aside#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#aside#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/extractors/preprocess.py" />
         <option value="$PROJECT_DIR$/extractors/train_hotel_aspects.py" />
         <option value="$PROJECT_DIR$/extractors/train_yelp_reviews.py" />
         <option value="$PROJECT_DIR$/extractors/test_tripadvisor_hotel_reviews.py" />
@@ -155,6 +168,7 @@
         <option value="$PROJECT_DIR$/web/web/urls.py" />
         <option value="$PROJECT_DIR$/web/web/settings/base.py" />
         <option value="$PROJECT_DIR$/web/ratings/templates/ratings/base.html" />
+        <option value="$PROJECT_DIR$/web/ratings/templates/ratings/index.html" />
       </list>
     </option>
   </component>
@@ -421,12 +435,12 @@
       <workItem from="1561951777574" duration="8231000" />
       <workItem from="1562037938128" duration="2908000" />
       <workItem from="1562250934696" duration="1116000" />
-      <workItem from="1562405740275" duration="5375000" />
+      <workItem from="1562405740275" duration="10364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="412371000" />
+    <option name="totallyTimeSpent" value="417360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="837" extended-state="0" />
@@ -841,9 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/ratings/static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -863,8 +874,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="30">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#aside#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#aside#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

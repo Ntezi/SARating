@@ -2,7 +2,7 @@
 {% load ratings_extras %}
 {% block body_block %}
 
-<section class="section-01">
+<section class="section-01" xmlns="http://www.w3.org/1999/html">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-12">
@@ -13,21 +13,18 @@
                         <ul class="list-group">
                             {% for business in businesses %}
                             <li class="list-group-item">
-                                <a href="{{ business.id }}" target="_blank">
-                                    <div class="col-md-9">
+                                <a href="{{ business.id }}" target="_blank" style="font-size: x-small; ">
+                                    <div class="col-md-8">
                                         <h5> {{ forloop.counter }} . {{ business.name }} </h5>
                                         <p class="list-group-item-text">
                                         <ul>
                                             <li><b>Location:</b> {{ business.location }}</li>
-                                            <li><b>Address:</b> {{ business.address }}</li>
-<!--                                            <li><b>Category:</b> {{ business.category }}</li>-->
-<!--                                            <li><b>Positive Reviews:</b> {{ business.positive_reviews }}</li>-->
-<!--                                            <li><b>Negative Reviews:</b> {{ business.negative_reviews }}</li>-->
-<!--                                            <li><b>T.A. Ratings:</b> {{ business.star_ratings }}</li>-->
+                                            <li><b>Positive Reviews:</b> {{ business.positive_reviews }}</li>
+                                            <li><b>Negative Reviews:</b> {{ business.negative_reviews }}</li>
                                         </ul>
                                         </p>
                                     </div>
-                                    <div class="col-md-3 text-center" style="float: right; margin-top: -100px">
+                                    <div class="col-md-2 text-center" style="float: right; margin-top: -100px">
                                         <h5> {{ business.total_reviews }}
                                             <small> reviews</small>
                                         </h5>
@@ -49,28 +46,43 @@
                     {% endif %}
                 </div>
             </div>
-            <!--            <aside class="col-lg-4 side-bar col-md-12">-->
-            <!--                <ul class="nav nav-tabs" role="tablist" id="myTab">-->
-            <!--                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#home" role="tab">Latest</a>-->
-            <!--                    </li>-->
-            <!--                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#profile" role="tab">Top</a></li>-->
-            <!--                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#messages" role="tab">Featured</a>-->
-            <!--                    </li>-->
-            <!--                </ul>-->
+            <aside class="col-lg-4 side-bar col-md-12" style="text-align: justify; font-size: 18px;">
+                <p style="margin-top: 50px;">
+                    This rating website was created based on the experience of others through reviews collected from
+                    different platforms like TripAdvisor, Booking.com, and Google My Business. </br></br>
+                    It aims to provide a summary and help users to get knowledge on services available such as hotels,
+                    restaurants, or attraction services related. </br></br>
+                    It will save their time of reading reviews across the internet before making a decision.
+                </p>
+                <p>
+                    We would like to hear your feedback about this application prototype to enhance it. Please feel free
+                    to answer the "Questionnaire."
+                </p>
+                <p>
+                    <a class="btn btn-info btn-xs" href="https://forms.gle/3j8ovhGkdD7sRbFM7" target="_blank">Questionnaire</a>
 
-            <!--                &lt;!&ndash; Tab panes &ndash;&gt;-->
-            <!--                <div class="tab-content sidebar-tabing" id="nav-tabContent">-->
-            <!--                    <div class="tab-pane active" id="home" role="tabpanel">-->
+                </p>
+                <!--                <ul class="nav nav-tabs" role="tablist" id="myTab">-->
+                <!--                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#home" role="tab">Latest</a>-->
+                <!--                    </li>-->
+                <!--                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#profile" role="tab">Top</a></li>-->
+                <!--                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#messages" role="tab">Featured</a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
 
-            <!--                    </div>-->
-            <!--                    <div class="tab-pane" id="profile" role="tabpanel">-->
+                <!--                &lt;!&ndash; Tab panes &ndash;&gt;-->
+                <!--                <div class="tab-content sidebar-tabing" id="nav-tabContent">-->
+                <!--                    <div class="tab-pane active" id="home" role="tabpanel">-->
 
-            <!--                    </div>-->
-            <!--                    <div class="tab-pane" id="messages" role="tabpanel">-->
+                <!--                    </div>-->
+                <!--                    <div class="tab-pane" id="profile" role="tabpanel">-->
 
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </aside>-->
+                <!--                    </div>-->
+                <!--                    <div class="tab-pane" id="messages" role="tabpanel">-->
+
+                <!--                    </div>-->
+                <!--                </div>-->
+            </aside>
         </div>
     </div>
 </section>
