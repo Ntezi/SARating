@@ -6,16 +6,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-12">
-                <h3 class="heading-large">Top Hotels</h3>
+                <h5 class="heading-large">Top Hotels</h5>
                 <div class="">
                     {% if businesses %}
                     <div class="card">
-                        <ul class="list-group">
+                        <ul class="list-group list-group-hover">
                             {% for business in businesses %}
                             <li class="list-group-item">
-                                <a href="{{ business.id }}" target="_blank" style="font-size: x-small; ">
+                                <a  href="{{ business.id }}" target="_blank" style="font-size: x-small; ">
                                     <div class="col-md-8">
-                                        <h5> {{ forloop.counter }} . {{ business.name }} </h5>
+                                        <h6> {{ forloop.counter }} . {{ business.name }} </h6>
                                         <p class="list-group-item-text">
                                         <ul>
                                             <li><b>Location:</b> {{ business.location }}</li>
@@ -25,9 +25,9 @@
                                         </p>
                                     </div>
                                     <div class="col-md-2 text-center" style="float: right; margin-top: -100px">
-                                        <h5> {{ business.total_reviews }}
+                                        <h7> {{ business.total_reviews }}
                                             <small> reviews</small>
-                                        </h5>
+                                        </h7>
                                         <div class="stars">
                                             {{ business.ratings|stars|safe}}
                                         </div>
@@ -46,17 +46,22 @@
                     {% endif %}
                 </div>
             </div>
-            <aside class="col-lg-4 side-bar col-md-12" style="text-align: justify; font-size: 18px;">
+            <aside class="col-lg-4 side-bar col-md-12" style="text-align: justify; font-size: 14px;">
+                <h5 class="heading-large">What is SARating?</h5>
                 <p style="margin-top: 50px;">
-                    This rating website was created based on the experience of others through reviews collected from
-                    different platforms like TripAdvisor, Booking.com, and Google My Business. </br></br>
-                    It aims to provide a summary and help users to get knowledge on services available such as hotels,
+                    It is a Sentiment Analysis based Rating system created based on the traveler's experiences. I collected and analysed reviews from
+                    different platforms like <a href="https://www.tripadvisor.com/Hotels-g293828-Rwanda-Hotels.html" target="_blank">TripAdvisor</a>,
+                    <a href="https://www.booking.com/country/rw.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaHWIAQGYAQm4AQfIAQzYAQHoAQH4AQuIAgGoAgO4AvGEiukFwAIB;sid=6c0cf82d59fe1d8cb810e90f6591245e;breadcrumb=searchresults_irene;srpvid=18b5a6435a21000d&" target="_blank">Booking.com</a>,
+                    and Google My Business to make a ranked list of hotels. </br></br>
+                    It aims to provide a summary and help guests to get knowledge on best services available such as hotels,
                     restaurants, or attraction services related. </br></br>
                     It will save their time of reading reviews across the internet before making a decision.
                 </p>
                 <p>
-                    We would like to hear your feedback about this application prototype to enhance it. Please feel free
-                    to answer the "Questionnaire."
+                    How did find this website? </br>
+                    What is your recommendations? </br></br>
+                    I would like to hear your feedback about this prototype to enhance it. </br></br>
+                    Please feel free to answer the "Questionnaire."
                 </p>
                 <p>
                     <a class="btn btn-info btn-xs" href="https://forms.gle/3j8ovhGkdD7sRbFM7" target="_blank">Questionnaire</a>

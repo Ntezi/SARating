@@ -100,3 +100,4 @@ header{float: left; width:100%}
 a.list-group-item {height: auto;min-height: 200px;}
 a.list-group-item.active small {color: #fff;}
 .stars {margin: 20px auto 1px;}
+.list-group-hover li:hover {background-color: #ececec;}
