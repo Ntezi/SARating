@@ -1,0 +1,100 @@
+{
+  (1392,
+  'comfort & facilities'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 1,
+    'POSITIVE': 0
+  },
+  (6478,
+  'comfort & facilities'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 0,
+    'POSITIVE': 1
+  },
+  (6478,
+  'location'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 1,
+    'POSITIVE': 0
+  },
+  (6478,
+  'miscellaneous'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 1,
+    'POSITIVE': 0
+  },
+  (8272,
+  'breakfast & food & drink'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 0,
+    'POSITIVE': 1
+  },
+  (8272,
+  'overall'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 0,
+    'POSITIVE': 1
+  },
+  (8272,
+  'service & staff'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 0,
+    'POSITIVE': 1
+  },
+  (8272,
+  'value for money'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 0,
+    'POSITIVE': 1
+  },
+  (11881,
+  'comfort & facilities'
+  ): {
+    'NEGATIVE': 1,
+    'NEUTRAL': 0,
+    'POSITIVE': 0
+  },
+  (11881,
+  'location'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 0,
+    'POSITIVE': 1
+  },
+  (11881,
+  'overall'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 0,
+    'POSITIVE': 1
+  },
+  (11881,
+  'service & staff'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 0,
+    'POSITIVE': 2
+  },
+  (13420,
+  'comfort & facilities'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 0,
+    'POSITIVE': 5
+  },
+  (13420,
+  'service & staff'
+  ): {
+    'NEGATIVE': 0,
+    'NEUTRAL': 0,
+    'POSITIVE': 1
+  }
+}

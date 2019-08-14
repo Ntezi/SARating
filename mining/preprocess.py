@@ -21,7 +21,7 @@ class Preprocess:
         return [word for word in no_punctuation.split() if word.lower() not in stopwords.words('english')]
 
     def get_data(self, data_file, encoding):
-        data = pd.read_csv(data_file, encoding=encoding)
+        data = pd.read_csv(data_file, encoding=encoding, index_col=0)
         return data.dropna()
 
     def get_ready_data(self, train_data_file, encoding):
@@ -78,3 +78,4 @@ class GetFile:
     aspects_file = '../data/results/aspects_file.csv'
     sentences_with_aspects_file = '../data/results/sentences_with_aspects_file.csv'
     aspects_with_sentiment_aws_file = '../data/results/aspects_with_sentiment_aws_file.csv'
+    aspect_sentiments_train_file = '../data/train/aspect_sentiments_train_file.csv'

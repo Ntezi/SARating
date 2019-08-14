@@ -10,4 +10,6 @@ urlpatterns = [
     # path('<str:id>/', views.DetailView.as_view(), name='detail'),
     path('<str:id>/', views.business_detail_view, name='detail'),
     path('about/', views.about, name='about'),
+    # path('report/', views.report, name='report'),
+    path('report/', views.ReportView.as_view(), name='report'),
 ]

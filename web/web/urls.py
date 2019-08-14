@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from ratings import views
+
 # from rest_framework import routers
 
 # router = routers.DefaultRouter()
@@ -25,6 +26,7 @@ from ratings import views
 urlpatterns = [
     # path('', ratings_app_view.index, name="index"),
     path('', views.BusinessListView.as_view()),
+    path('report/', views.ReportView.as_view(), name='report'),
     # path('', include(router.urls)),
     path('', include('ratings.urls')),
     # path('ratings-api/', include('rest_framework.urls', namespace='rest_framework')),

@@ -5,8 +5,12 @@ import pickle
 import pandas as pd
 from preprocess import Preprocess, GetFile
 from test import Test, ModelFiles
+from load import LoadResults
 
 from boto_nlp import BotoNLP
+
+import collections
+
 
 model_file = ModelFiles().naive_model_file
 
@@ -33,12 +37,14 @@ class ClassifyHotelAspects:
         encoding = 'latin-1'
         sample = 5
 
-        # test_data = Preprocess().get_sample_data(test_data_file, sample, encoding)
-        test_data = Preprocess().get_ready_data(test_data_file, encoding)
-        self.get_aspects(test_data)
+        test_data = Preprocess().get_sample_data(test_data_file, sample, encoding)
+        # test_data = Preprocess().get_ready_data(test_data_file, encoding)
+        # self.get_aspects(test_data)
 
         # aspects_with_sentiment_aws_file = GetFile().aspects_with_sentiment_aws_file
         # self.merge_aspects_and_sentiments_with_reviews(aspects_with_sentiment_aws_file)
+
+        self.merge_aspects_and_sentiments_with_reviews()
 
     def classify_aspects(self, test_data):
         nlp = English()
@@ -55,7 +61,7 @@ class ClassifyHotelAspects:
                 y_test = model.predict(x_test)
                 x_test = ', '.join(x_test)
                 y_test = ', '.join(y_test)
-                aspect = (index, x_test, y_test)
+                aspect = (index, row['company_url'], x_test, y_test)
                 aspects.append(aspect)
         return aspects
 
@@ -72,15 +78,19 @@ class ClassifyHotelAspects:
 
         # Save sentences with  their aspects
         aspects = self.classify_aspects(test_data)
-        df_aspects = pd.DataFrame(aspects, columns=['index', 'sentences', 'aspects'])
+        df_aspects = pd.DataFrame(aspects, columns=['index', 'company_url', 'sentences', 'aspects'])
 
         # merge aspects with reviews
         self.merge_aspects_with_reviews(test_data, df_aspects)
 
+        # Aspects Sentiments analysis
+        model = pickle.load(open(ModelFiles().naive_model_for_aspect_sentiments_file, 'rb'))
+        df_aspects['sentiments'] = model.predict(df_aspects['sentences'])
+
         aspects_file = GetFile().aspects_file
         df_aspects.to_csv(aspects_file)
 
-        # Sentiments analysis with aws boto at sentence level
+        # Aspects Sentiments analysis with aws boto at sentence level
         # BotoNLP(aspects_file)
 
     def merge_aspects_with_reviews(self, test_data, df_aspects):
@@ -105,17 +115,21 @@ class ClassifyHotelAspects:
         result_merged_with_aspects_file = GetFile().tripadvisor_hotel_reviews_result_merged_with_aspects_file
         merged_aspects_with_reviews.to_csv(result_merged_with_aspects_file)
 
-
-    def merge_aspects_and_sentiments_with_reviews(self, aspects_with_sentiment_aws_file):
+    def merge_aspects_and_sentiments_with_reviews(self):
 
         encoding = 'latin-1'
 
-        df_aspects_sentiments = Preprocess().get_data(aspects_with_sentiment_aws_file, encoding)
+        df_aspect_sentiments = Preprocess().get_data(GetFile().aspects_file, encoding)
 
-        x = df_aspects_sentiments.groupby(['aspects', 'sentiments']).size().unstack(fill_value=0)
+        x = df_aspect_sentiments.groupby(['index_', 'aspects']).size().unstack(fill_value=0)
 
-        x.stack()
-        a = x.to_dict('index')
+        # x.stack()
+
+        a = x.to_dict('index_')
+
+        # c = collections.defaultdict()
+        # for key, value in a.items():
+        #     print(key)
 
         print(a)
 
@@ -126,3 +140,4 @@ if __name__ == '__main__':
 
     tripadvisor_hotel_reviews_result_file = GetFile().tripadvisor_hotel_reviews_result_file
     ClassifyHotelAspects(tripadvisor_hotel_reviews_result_file)
+    LoadResults()

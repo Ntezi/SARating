@@ -1,0 +1,259 @@
+{% extends "ratings/base.html" %}
+{% load ratings_extras %}
+{% block body_block %}
+<section class="section-01">
+    <div class="container">
+        <div class="row">
+            <h3 class="heading-large">{{ business.name }}</h3>
+            <div class="col-lg-2 col-md-2"></div>
+            <div class="col-lg-8 col-md-8">
+                <div id="report"
+                     style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto;"></div>
+            </div>
+            <div class="col-lg-2 col-md-2"></div>
+        </div>
+    </div>
+</section>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
+<script>
+    // Create the chart
+    Highcharts.chart('report', {
+        chart: {
+            type: 'pie'
+        },
+        title: {
+            text: 'The Overall Report. July, 2019'
+        },
+        subtitle: {
+            text: 'Click on each aspect to view the overall sentiment'
+        },
+        plotOptions: {
+            series: {
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}: {point.y:.0f}',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black',
+                        fontSize: '14px'
+                    }
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> of total<br/>'
+        },
+        credits: {
+            enabled: false
+        },
+
+        series: [
+            {
+                name: "Aspects",
+                colorByPoint: true,
+                data: [
+                    {
+                        name: "Breakfast & Food & Drink",
+                        y: 7567,
+                        drilldown: "Breakfast & Food & Drink"
+                    },
+                    {
+                        name: "Comfort & Facilities",
+                        y: 42930,
+                        drilldown: "Comfort & Facilities"
+                    },
+                    {
+                        name: "Location",
+                        y: 10697,
+                        drilldown: "Location"
+                    },
+                    {
+                        name: "Miscellaneous",
+                        y: 11577,
+                        drilldown: "Miscellaneous"
+                    },
+                    {
+                        name: "Overall",
+                        y: 14389,
+                        drilldown: "Overall"
+                    },
+                    {
+                        name: "Service & Staff",
+                        y: 25424,
+                        drilldown: "Service & Staff"
+                    },
+                    {
+                        name: "Value for Money",
+                        y: 1260,
+                        drilldown: "Value for Money"
+                    }
+                ]
+            }
+        ],
+        drilldown: {
+            series: [
+                {
+                    name: "Breakfast & Food & Drink",
+                    id: "Breakfast & Food & Drink",
+                    data: [
+                        [
+                            "MIXED",
+                            44
+                        ],
+                        [
+                            "NEGATIVE",
+                            298
+                        ],
+                        [
+                            "NEUTRAL",
+                            1040
+                        ],
+                        [
+                            "POSITIVE",
+                            6185
+                        ]
+                    ]
+                },
+                {
+                    name: "Comfort & Facilities",
+                    id: "Comfort & Facilities",
+                    data: [
+                        [
+                            "MIXED",
+                            174
+                        ],
+                        [
+                            "NEGATIVE",
+                            5961
+                        ],
+                        [
+                            "NEUTRAL",
+                            13239
+                        ],
+                        [
+                            "POSITIVE",
+                            23556
+                        ]
+                    ]
+                },
+                {
+                    name: "Location",
+                    id: "Location",
+                    data: [
+                        [
+                            "MIXED",
+                            6
+                        ],
+                        [
+                            "NEGATIVE",
+                            158
+                        ],
+                        [
+                            "NEUTRAL",
+                            4561
+                        ],
+                        [
+                            "POSITIVE",
+                            5972
+                        ]
+                    ]
+                },
+                {
+                    name: "Miscellaneous",
+                    id: "Miscellaneous",
+                    data: [
+                        [
+                            "MIXED",
+                            3
+                        ],
+                        [
+                            "NEGATIVE",
+                            408
+                        ],
+                        [
+                            "NEUTRAL",
+                            7915
+                        ],
+                        [
+                            "POSITIVE",
+                            3251
+                        ]
+                    ]
+                },
+                {
+                    name: "Overall",
+                    id: "Overall",
+                    data: [
+                        [
+                            "MIXED",
+                            24
+                        ],
+                        [
+                            "NEGATIVE",
+                            550
+                        ],
+                        [
+                            "NEUTRAL",
+                            2553
+                        ],
+                        [
+                            "POSITIVE",
+                            11262
+                        ]
+                    ]
+                },
+                {
+                    name: "Service & Staff",
+                    id: "Service & Staff",
+                    data: [
+                        [
+                            "MIXED",
+                            74
+                        ],
+                        [
+                            "NEGATIVE",
+                            2007
+                        ],
+                        [
+                            "NEUTRAL",
+                            7306
+                        ],
+                        [
+                            "POSITIVE",
+                            16037
+                        ]
+                    ]
+                },
+                {
+                    name: "Value for Money",
+                    id: "Value for Money",
+                    data: [
+                        [
+                            "MIXED",
+                            4
+                        ],
+                        [
+                            "NEGATIVE",
+                            263
+                        ],
+                        [
+                            "NEUTRAL",
+                            473
+                        ],
+                        [
+                            "POSITIVE",
+                            520
+                        ]
+                    ]
+                }
+            ]
+        }
+    });
+</script>
+{% endblock %}

@@ -23,3 +23,4 @@ class Test:
 class ModelFiles:
     naive_model_file = '../data/python/naive_model.pkl'
     logistics_model_file = '../data/python/logistics_model_file.pkl'
+    naive_model_for_aspect_sentiments_file = '../data/python/naive_model_for_aspect_sentiments_file.pkl'

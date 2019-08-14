@@ -21,6 +21,10 @@ def about(request):
     return render(request, 'ratings/about.html')
 
 
+def report(request):
+    return render(request, 'ratings/report.html')
+
+
 class IndexView(TemplateView):
     # Just set this Class Object Attribute to the template page.
     # template_name = 'app_name/site.html'
@@ -58,3 +62,10 @@ class BusinessDetailView(DetailView):
         business = Business.objects.get(_id=id)
         context = {'business': business}
         return render(request, 'ratings/detail.html', context)
+
+
+class ReportView(TemplateView):
+    model = Business
+    context_object_name = 'businesses'
+    # paginate_by = 50  # if pagination is desired
+    template_name = 'ratings/report.html'
