@@ -69,3 +69,11 @@ class ReportView(TemplateView):
     context_object_name = 'businesses'
     # paginate_by = 50  # if pagination is desired
     template_name = 'ratings/report.html'
+
+
+class PopularView(ListView):
+    model = Business
+    context_object_name = 'businesses'
+    ordering = ['-total_reviews']
+    # paginate_by = 50  # if pagination is desired
+    template_name = 'ratings/popular.html'

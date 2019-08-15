@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aea45dc-6374-4d3d-9d67-177b4a527f1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mining/train_aspect_sentiments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ratings/templates/ratings/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/ratings/templates/ratings/popular.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integration/to_mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/integration/to_mysql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining/preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining/test_hotel_aspects.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining/test_hotel_aspects.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ratings/templates/ratings/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/templates/ratings/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ratings/templates/ratings/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/templates/ratings/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ratings/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ratings/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/ratings/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/web/urls.py" afterDir="false" />
@@ -42,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+            <state relative-caret-position="285">
+              <caret line="19" column="28" lean-forward="true" selection-end-line="94" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
@@ -57,17 +53,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="90" column="78" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="78" />
+            <state relative-caret-position="456">
+              <caret line="49" column="74" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/report.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="32" column="69" lean-forward="true" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
+            <state relative-caret-position="406">
+              <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
@@ -77,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/ratings/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="63" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="63" />
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -92,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/ratings/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="66" column="16" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="16" />
+            <state relative-caret-position="533">
+              <caret line="73" column="17" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="17" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -102,10 +98,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/popular.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/web/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+            <state relative-caret-position="435">
+              <caret line="29" column="65" selection-start-line="29" selection-end-line="30" />
               <folding>
                 <element signature="e#627#659#0" expanded="true" />
               </folding>
@@ -114,10 +123,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mining/preprocess.py">
+        <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="165">
+              <caret line="70" column="97" selection-start-line="70" selection-start-column="97" selection-end-line="70" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -198,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/extractors/load.py" />
         <option value="$PROJECT_DIR$/display_site/ratings/models.py" />
         <option value="$PROJECT_DIR$/display_site/display_site/urls.py" />
         <option value="$PROJECT_DIR$/extractors/display_wordcloud.py" />
@@ -244,18 +252,18 @@
         <option value="$PROJECT_DIR$/integration/to_mysql.py" />
         <option value="$PROJECT_DIR$/mining/bbbb.json" />
         <option value="$PROJECT_DIR$/mining/test_hotel_aspects.py" />
+        <option value="$PROJECT_DIR$/web/ratings/templates/ratings/report.html" />
         <option value="$PROJECT_DIR$/web/ratings/views.py" />
-        <option value="$PROJECT_DIR$/web/ratings/urls.py" />
+        <option value="$PROJECT_DIR$/web/ratings/templates/ratings/popular.html" />
         <option value="$PROJECT_DIR$/web/web/urls.py" />
         <option value="$PROJECT_DIR$/web/ratings/templates/ratings/base.html" />
-        <option value="$PROJECT_DIR$/web/ratings/templates/ratings/report.html" />
+        <option value="$PROJECT_DIR$/web/ratings/urls.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1441" />
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
+    <option name="width" value="1440" />
     <option name="height" value="837" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -264,6 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -286,13 +295,27 @@
               <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
               <item name="SARating" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="ratings" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SARating" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="ratings" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="ratings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SARating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SARating" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -519,7 +542,8 @@
       <workItem from="1565097884956" duration="1145000" />
       <workItem from="1565146533781" duration="1331000" />
       <workItem from="1565677885086" duration="12636000" />
-      <workItem from="1565798779107" duration="5182000" />
+      <workItem from="1565798779107" duration="5949000" />
+      <workItem from="1565839174552" duration="1883000" />
     </task>
     <task id="LOCAL-00001" summary="fixes">
       <created>1562545462082</created>
@@ -553,15 +577,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="452642000" />
+    <option name="totallyTimeSpent" value="455292000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1441" y="23" width="1280" height="837" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="837" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info auto_hide="true" id="Favorites" order="1" side_tool="true" weight="0.3295129" />
-      <window_info auto_hide="true" content_ui="combo" id="Project" order="2" weight="0.26817447" />
+      <window_info auto_hide="true" content_ui="combo" id="Project" order="2" weight="0.26752505" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -620,28 +644,21 @@
     <SUITE FILE_PATH="coverage/SARating$LoadResults.coverage" NAME="LoadResults Coverage Results" MODIFIED="1558099027715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extractors" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/collections/yelp_business.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-6">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/collections/yelp/yelp_hotel_travel_reviews.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/train/yelp_hotel_travel_reviews_.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="csv-text-editor" />
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="390">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mining/explore_yelp.py">
@@ -903,6 +920,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mining/bbbb.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/integration/to_mysql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -913,17 +937,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mining/bbbb.json">
+    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="456">
+          <caret line="49" column="74" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="285">
+          <caret line="19" column="28" lean-forward="true" selection-end-line="94" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
@@ -933,20 +957,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/popular.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/ratings/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="16" />
+        <state relative-caret-position="533">
+          <caret line="73" column="17" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="17" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="70" column="97" selection-start-line="70" selection-start-column="97" selection-end-line="70" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/web/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        <state relative-caret-position="435">
+          <caret line="29" column="65" selection-start-line="29" selection-end-line="30" />
           <folding>
             <element signature="e#627#659#0" expanded="true" />
           </folding>
@@ -955,36 +1009,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/ratings/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="63" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="63" />
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="77" column="105" selection-start-line="77" selection-start-column="105" selection-end-line="77" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="90" column="78" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ratings/templates/ratings/report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="32" column="69" lean-forward="true" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,0 +1,52 @@
+{% extends "ratings/base.html" %}
+{% load ratings_extras %}
+{% block body_block %}
+
+<section class="section-01" xmlns="http://www.w3.org/1999/html">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <h5 class="heading-large">Most Popular Hotels</h5>
+                <div class="">
+                    {% if businesses %}
+                    <div class="card">
+                        <ul class="list-group list-group-hover">
+                            {% for business in businesses %}
+                            <li class="list-group-item">
+                                <a  href="{{ business.id }}" target="_blank" style="font-size: x-small; ">
+                                    <div class="col-md-8">
+                                        <h6> {{ forloop.counter }} . {{ business.name }} </h6>
+                                        <p class="list-group-item-text">
+                                        <ul>
+                                            <li><b>Location:</b> {{ business.location }}</li>
+                                            <li><b>Positive Reviews:</b> {{ business.positive_reviews }}</li>
+                                            <li><b>Negative Reviews:</b> {{ business.negative_reviews }}</li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-2 text-center" style="float: right; margin-top: -100px">
+                                        <h7> {{ business.total_reviews }}
+                                            <small> reviews</small>
+                                        </h7>
+                                        <div class="stars">
+                                            {{ business.ratings|stars|safe}}
+                                        </div>
+                                        <p>{{ business|round_ratings}}
+                                            <small> /</small>
+                                            5
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+
+                    </div>
+
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

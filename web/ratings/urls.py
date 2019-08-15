@@ -12,4 +12,6 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     # path('report/', views.report, name='report'),
     path('report/', views.ReportView.as_view(), name='report'),
+    path('popular/', views.PopularView.as_view(), name='popular'),
+
 ]
