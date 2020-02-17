@@ -13,5 +13,6 @@ urlpatterns = [
     # path('report/', views.report, name='report'),
     path('report/', views.ReportView.as_view(), name='report'),
     path('popular/', views.PopularView.as_view(), name='popular'),
+    path('popular/<str:id>/', views.business_detail_view, name='detail'),
 
 ]
